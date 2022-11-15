@@ -3,7 +3,15 @@
 ## Directory
 
 - `/components` - reusable custom elements that you need in a page
+
+  - `/Footer` - the footer component
+  - `/Header` - the header component
+
 - `/views` - pages that we see on the website
+  - `/About` - about page
+  - `/FAQ` - FAQ page
+  - `/Sponsors` - sponsors page
+  - `/Team` - our team pages
 
 ## Branch Naming Convention
 
