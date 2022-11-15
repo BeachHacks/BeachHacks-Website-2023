@@ -2,7 +2,7 @@
 
 ## Directory
 
-- `/components` - reusable custom elements that you need in a page
+- `/components` - reusable custom elements that you need in a page. You can add your components if you need any. Just make sure to create a folder and name it after your component. Then, create a `<file-name>`.js and `<file-name>`.css file.
 
   - `/Footer` - the footer component
   - `/Header` - the header component
