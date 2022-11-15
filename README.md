@@ -2,6 +2,8 @@
 
 ## Branch Naming Convention
 
+Please follow the following naming convention when creating a new branch:
+
 - `<name>__<branch-name>`
 
   - `<name>` - first name only
