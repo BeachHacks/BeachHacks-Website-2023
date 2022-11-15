@@ -1,5 +1,10 @@
 # BeachHacks Website 2023
 
+## Directory
+
+- `/components` - reusable custom elements that you need in a page
+- `/views` - pages that we see on the website
+
 ## Branch Naming Convention
 
 Please follow the following naming convention when creating a new branch:
