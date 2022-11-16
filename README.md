@@ -11,6 +11,7 @@
 - `/views` - pages that we see on the website
   - `/About` - about page
   - `/FAQ` - FAQ page
+  - `/Home` - home page
   - `/Sponsors` - sponsors page
   - `/Team` - our team pages
 
