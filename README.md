@@ -6,6 +6,7 @@
 
   - `/Footer` - the footer component
   - `/Header` - the header component
+  - `/SideNar` - the side navigation component
 
 - `/views` - pages that we see on the website
   - `/About` - about page
