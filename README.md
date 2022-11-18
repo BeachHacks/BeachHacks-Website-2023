@@ -8,7 +8,7 @@
   - `/Header` - the header component
   - `/SideNavbar` - the side navigation component
 
--`diagrams` - screenshots of diagrams
+- `diagrams` - screenshots of diagrams
 
 - `/views` - pages that we see on the website
   - `/About` - about page
