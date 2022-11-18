@@ -8,9 +8,12 @@
   - `/Header` - the header component
   - `/SideNavbar` - the side navigation component
 
+-`diagrams` - screenshots of diagrams
+
 - `/views` - pages that we see on the website
   - `/About` - about page
   - `/Apply` - apply page
+  - `/Home` - home page
   - `/FAQ` - FAQ page
   - `/Sponsors` - sponsors page
   - `/Team` - our team page
