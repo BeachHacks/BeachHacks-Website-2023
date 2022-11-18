@@ -6,14 +6,14 @@
 
   - `/Footer` - the footer component
   - `/Header` - the header component
-  - `/SideNar` - the side navigation component
+  - `/SideNavbar` - the side navigation component
 
 - `/views` - pages that we see on the website
   - `/About` - about page
+  - `/Apply` - apply page
   - `/FAQ` - FAQ page
-  - `/Home` - home page
   - `/Sponsors` - sponsors page
-  - `/Team` - our team pages
+  - `/Team` - our team page
 
 ## Branch Naming Convention
 
