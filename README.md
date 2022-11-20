@@ -22,13 +22,14 @@
 
 Please follow the following naming convention when creating a new branch:
 
-- `<name>__<branch-name>`
+- `<name>__<task-name>__<notes>`
 
   - `<name>` - first name only
-  - `<branch-name>` - notes that represent your task
+  - `<branch-name>` - name that represents your task
+  - <notes> - any changes you made
     - replace whitespace as `-`
     - lower case is preferred
 
 - Examples
-  - `lydia__FAQ`
-  - `daniel__home-page`
+  - `lydia__FAQ__made-boxes`
+  - `daniel__home-page__changed-text-color`
