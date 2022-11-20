@@ -25,10 +25,10 @@ Please follow the following naming convention when creating a new branch:
 - `<name>__<branch-name>`
 
   - `<name>` - first name only
-  - `<branch-name>` - notes that represent the work you did
+  - `<branch-name>` - notes that represent your task
     - replace whitespace as `-`
     - lower case is preferred
 
 - Examples
-  - `lydia__worked-on-FAQ`
-  - `daniel__fixed-bugs`
+  - `lydia__FAQ`
+  - `daniel__home-page`
