@@ -26,7 +26,7 @@ Please follow the following naming convention when creating a new branch:
 
   - `<name>` - first name only
   - `<branch-name>` - name that represents your task
-  - <notes> - any changes you made
+  - `<notes>` - any changes you made
     - replace whitespace as `-`
     - lower case is preferred
 
