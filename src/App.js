@@ -1,7 +1,8 @@
 import "./App.css";
-
+import "./views/Sponsors/Sponsors";
+import Sponsors from "./views/Sponsors/Sponsors";
 function App() {
-  return <h1>Home Page</h1>;
+  return <Sponsors/>;
 }
 
 export default App;
