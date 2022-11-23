@@ -1,7 +1,14 @@
 // create react component
 import React from "react";
-import { Container, Grid } from "@mui/material";
-import img1 from "../../components/Images/Rectangle_122.png";
+import { Container, Grid, styled } from "@mui/material";
+import img from "../../components/Images/Rectangle_122.png";
+import img2 from "../../components/Images/Rectangle_479x540.png";
+const Img = styled("img")({
+  margin: "auto",
+  display: "block",
+  maxWidth: "100%",
+  maxHeight: "100%",
+});
 
 const Sponsors = () => {
   return (
@@ -9,57 +16,33 @@ const Sponsors = () => {
       <Grid container className={"sponsor-headline"}>
         <Grid item xs={12}>
           {/*Center h1 tag within container*/}
-          <h1 style={{ textAlign: "center" }}>Our Sponsors</h1>
+          <h1
+            style={{
+              textAlign: "center",
+              fontSize: "4.00rem",
+            }}
+          >
+            Our Sponsors
+          </h1>
         </Grid>
       </Grid>
       <Grid
         container
+        spacing={2}
         direction={"row"}
-        className={"sponsor-1-col"}
-        justifyContent="space-between"
+        className={"sponsor-row"}
+        justifyContent="flex-start"
+        flexGrow={1}
+        style={{}}
       >
         <Grid item xs={2}>
-          <img
-            src={img1}
-            alt={"placeholder-1"}
-            style={{
-              width: 100,
-              height: 100,
-              display: "flex",
-              justifyContent: "flex-start",
-            }}
-          />
+          <Img alt="place-holder-1" src={img} />
         </Grid>
         <Grid item xs={2}>
-          <img
-            src={img1}
-            alt={"placeholder-2"}
-            style={{ height: 100, width: 100 }}
-          />
+          <Img alt="place-holder-2" src={img} />
         </Grid>
         <Grid item xs={2}>
-          <img
-            src={img1}
-            alt={"placeholder-3"}
-            style={{ height: 100, width: 100 }}
-          />
-        </Grid>
-        <Grid
-          item
-          xs={6}
-          className={"big-placeholder"}
-          justifyContent={"flex-end"}
-        >
-          <img
-            src={img1}
-            alt={"placeholder-big"}
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              paddingLeft: 60,
-            }}
-          />
+          <Img alt="place-holder-3" src={img} />
         </Grid>
       </Grid>
     </Container>
