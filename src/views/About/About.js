@@ -7,6 +7,7 @@ import Globe from "./assets/globe.svg";
 const About = () => {
     return (
         <section className="about-container" id="about">
+            {/* test comment */}
             <div className="about-photo">
                 <h1 className="about-photo-text">Photo</h1>
             </div>
