@@ -8,9 +8,12 @@
   - `/Header` - the header component
   - `/SideNavbar` - the side navigation component
 
+- `diagrams` - screenshots of diagrams
+
 - `/views` - pages that we see on the website
   - `/About` - about page
   - `/Apply` - apply page
+  - `/Home` - home page
   - `/FAQ` - FAQ page
   - `/Sponsors` - sponsors page
   - `/Team` - our team page
@@ -19,13 +22,14 @@
 
 Please follow the following naming convention when creating a new branch:
 
-- `<name>__<branch-name>`
+- `<name>__<task-name>__<notes>`
 
   - `<name>` - first name only
-  - `<branch-name>` - notes that represent the work you did
+  - `<branch-name>` - name that represents your task
+  - `<notes>` - any changes you made
     - replace whitespace as `-`
     - lower case is preferred
 
 - Examples
-  - `lydia__worked-on-FAQ`
-  - `daniel__fixed-bugs`
+  - `lydia__FAQ__made-boxes`
+  - `daniel__home-page__changed-text-color`
