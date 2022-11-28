@@ -1,0 +1,10 @@
+.faq-header-container {
+    display: grid;
+    justify-content: center;
+    font-family: 'Poppins';
+}
+
+h1 {
+    font-size: 96;
+    font-weight: 500;
+}
