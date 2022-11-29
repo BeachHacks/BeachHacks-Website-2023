@@ -1,10 +1,19 @@
 .faq-container {
-    display: grid;
     justify-content: center;
+    display: grid;
     font-family: 'Poppins';
+}
+
+.header {
+    justify-content: center;
+}
+
+.question {
+    justify-content: right;
 }
 
 h1 {
     font-size: 96;
     font-weight: 500;
+    justify-content: center;
 }

@@ -6,7 +6,7 @@ const About = () => {
   const [questions, setQuestions] = useState([
     {
       Q: 'Question',
-      P: '',
+      P: 'Stuff',
       id: 1,
       expand: false,
     }, 
@@ -35,21 +35,23 @@ const About = () => {
 
   const toggleQuestion = (id) => {
     setQuestions(questions.map((question) => question.id === id ? {...question, expand: !question.expand} : question));
-    console.log(id);
   }
   return (
     <section className="faq-container" id="faq">
       {/* FAQ's */}
-      <div className="Header">
+      <div className="header">
           <h1>FAQ's</h1>
       </div>
 
       {/* Dropdown bars */}
+      <div className="question">
       {questions.length > 0 ? (
         <Questions questions={questions} onToggle={toggleQuestion}/>
       ) : (
         'None'
       )}
+      </div>
+      
       
 
     </section>
