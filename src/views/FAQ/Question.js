@@ -1,3 +1,5 @@
+import "./About.css"
+
 const Question = ({question, onToggle}) => {
   return (
     <div className="question" onClick={() => onToggle(question.id)}>

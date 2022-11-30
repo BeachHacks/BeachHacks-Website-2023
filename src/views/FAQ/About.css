@@ -4,13 +4,18 @@
     font-family: 'Poppins';
 }
 
-.header {
+/* .header {
     justify-content: center;
-}
+} */
 
 .question {
-    justify-content: right;
+    background: #f4f4f431;
+    margin: 5px;
+    padding: 10px 20px;
 }
+/* .quesiton h4 {
+    justify-content: right;
+} */
 
 h1 {
     font-size: 96;
