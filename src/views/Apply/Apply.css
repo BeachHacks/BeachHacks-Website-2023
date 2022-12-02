@@ -1,0 +1,66 @@
+button {
+    display: flex;
+    font-family: Poppins;
+    font-weight: 600 !important;
+    font-size: 20px;
+    background: #B1B1B1;
+    border-radius: 39px;
+    border: none;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.apply-app-logo {
+    height: 6rem;
+    width: 6rem;
+    padding-right: 1rem;
+}
+
+.apply-app-title {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.apply-app-title h1 {
+    font-weight: 900 !important;
+}
+
+.apply-app-section h3 {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.apply-app-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    height: 750px;
+}
+
+.apply-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 800px 800px;
+}
+
+.apply-box {
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 3rem 3rem 1rem 5rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.apply-box-desc {
+    padding-bottom: 2rem;
+}
+
+.apply-box-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
