@@ -12,9 +12,9 @@ button {
 }
 
 .home-app-logo {
-    height: 6rem;
-    width: 6rem;
-    padding-right: 1rem;
+    height: 2rem;
+    width: 12rem;
+    padding-right: 2rem;
 }
 
 .home-app-title {
@@ -36,7 +36,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 750px;
+    width: 600px;
     height: 750px;
 }
 
@@ -48,6 +48,6 @@ button {
 .home-box {
     background-color: #D9D9D9;
     border-radius: 20px;
-    padding: 3rem 3rem 1rem 5rem;
-    margin: 2rem 0 2rem 0;
+    padding: 20rem 5rem 20rem 17rem;
+    margin: 5rem 0 5rem 0;
 }
