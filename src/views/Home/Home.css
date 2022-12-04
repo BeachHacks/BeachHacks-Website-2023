@@ -1,1 +1,65 @@
 /* you can do your css here */
+button {
+    display: flex;
+    font-family: Poppins;
+    font-weight: 600 !important;
+    font-size: 20px;
+    background: #b1b1b1;
+    border-radius: 39px;
+    border: none;
+    padding: 1rem 2rem; 
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 3em 0 0 0;
+    padding: 2;
+}
+
+.home-app-logo {
+    height: 6rem;
+    width: 6rem;
+    padding-right: 1 rem;
+}
+
+.home-app-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    height: 750px;
+}
+
+.home-app-title {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.home-app-title h1{
+    font-weight: 900 !important;
+}
+
+.home-app-section h3 {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.home-date-session {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    height: 750px;
+}
