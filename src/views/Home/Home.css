@@ -1,0 +1,19 @@
+.home-app-logo {
+    height: 6rem;
+    width: 6rem;
+    padding-right: 1rem;
+}
+
+.home-app-title {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.home-app-session {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    height: 750px;
+}
