@@ -9,8 +9,7 @@ const About = () => {
         <section className="about-container" id="about">
             {/* test comment */}
             <div className="about-photo">
-                {/* <h1 className="about-photo-text">Photo</h1> */}
-                <img src="https://i.imgur.com/xmGUW3p.jpeg"></img>
+                <h1 className="about-photo-text">Photo</h1>
             </div>
             <div className="about-text-box">
                 <h1>About BeachHacks</h1>
