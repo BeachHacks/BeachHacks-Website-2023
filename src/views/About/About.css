@@ -37,6 +37,12 @@ h3 {
     margin: 20px;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+.about-photo img {
+    height: auto;
+    width: 100%;
+    object-fit: fill;
 }
 
 .about-text-box {

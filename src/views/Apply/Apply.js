@@ -27,6 +27,13 @@ const Apply = () => {
                         <button className="apply-button">APPLY TO SPONSOR</button>
                     </div>
                 </div>
+                <div className="apply-box">
+                    <h1 className="apply-box-title">Looking to be a Mentor?</h1>
+                    <h3 className="apply-box-desc">BeachHacks is looking for mentors to help us provide guidance and support to students. If you are interested in mentoring, please fill out the form below.</h3>
+                    <div className="apply-box-btn">
+                        <button className="apply-button">APPLY TO MENTOR</button>
+                    </div>
+                </div>
             </div>
         </section>
     )
