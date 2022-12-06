@@ -6,28 +6,40 @@ const About = () => {
   const [questions, setQuestions] = useState([
     {
       Q: 'Question',
-      P: 'Answers',
+      P:<>
+        Answers<br />
+      
+        </>,
       id: 1,
       expand: false,
     }, 
 
     {
       Q: 'Question',
-      P:'Answers',
+      P:<>
+        Answers<br />
+      
+        </>,
       id: 2,
       expand: false,
     },
 
     {
       Q: 'Question',
-      P: 'Answers',
+      P:<>
+        Answers<br />
+      
+        </>,
       id: 3,
       expand: false,
     },
 
     {
       Q: 'Question',
-      P: 'Answers',
+      P:<>
+        Answers<br />
+        
+        </>,
       id: 4,
       expand: false,
     }
