@@ -1,22 +1,24 @@
 
-.elecontainer {
+.ele-container {
     justify-content: center;
     font-family: 'Poppins';
+    margin: 200px;
 
 }
 
 .faq-container {
     display: grid;
     grid-template-rows: 120px 400px;
-    margin: 150px;
+    margin: 0px;
 }
 
 .header h1 {
     display: flex;
     font-size: 96px;
-    align-items: center;
+    font-weight: 500;
     margin: 0px;
     border: 0px;
+    justify-content: center;
 }
 
 .question-container {
@@ -24,33 +26,72 @@
     flex-direction: column;
     margin: 0px;
     padding: 0px;
+    align-content: center;
+    align-items: center;
 }
 
 
 .question {
-    border-left: 100px solid #D9D9D9;
-    border-right: 100px solid #D9D9D9;
-    border-top: 20px solid #D9D9D9;
-    border-bottom: 20px solid #D9D9D9;
+    justify-content: center;
+    width: 975px;
+    border-left: 125px solid #D9D9D9;
+    border-right: 160px solid #D9D9D9;
+    border-top: 28px solid #D9D9D9;
+    border-bottom: 26px solid #D9D9D9;
     border-radius: 5px;
     background-clip: border-box;
     margin-top: 20px;
+    font-size: 20px;
+    
+}
+.quesiton-box {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
 }
 
 .question h4 {
-    font-size: 20px;
     background-color: white;
     margin: 10px;
 }
 
 .question p {
-    font-size: 20px;
-    margin: 10px;
-    font-weight: 500;
+    background-color: #F3F3F3;
+    margin: 0px;
+    padding: 10px;
+
 }
 
-h1 {
-    font-size: 96;
-    font-weight: 500;
-    justify-content: center;
+.chevron::before {
+    margin-right: 20px;
+    margin-top: 3px;
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.45em;
 }
+
+.chevron.right:before {
+	left: 0;
+	transform: rotate(45deg);
+}
+
+.chevron.bottom:before {
+	top: 0;
+	transform: rotate(135deg);
+}
+
+.chevron.top:before {
+	top: 0;
+
+}
+
+
