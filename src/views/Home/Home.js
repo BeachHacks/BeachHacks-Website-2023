@@ -8,14 +8,14 @@ const Home = () => {
                 <div className="home-app-title">
                     <img src={bh_logo} alt="BeachHacks" className="home-app-logo" />   
                 </div>
-                <h3>Date, 2023</h3>
+                <h2>Date, 2023</h2>
                 <h3>Get Involved</h3>
                 <button>Apply Now</button>
             </div>
             
             <div className="home-box-section">
                 <div className="home-box">
-                    <h1 className="home-box-title">3D ISOMETRIC ART?</h1>
+                    <h2 className="home-box-title">3D ISOMETRIC ART?</h2>
                 </div>
             </div>
         </section>

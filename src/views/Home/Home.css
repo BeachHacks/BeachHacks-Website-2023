@@ -11,23 +11,51 @@ button {
     justify-content: center;
 }
 
+
+h1 {
+    font-size: 3em;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2.2em;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 0.5em 0 0 0;
+    padding: 0;
+}
+
 .home-app-logo {
-    height: 2rem;
-    width: 12rem;
-    padding-right: 2rem;
+    height: 5rem;
+    width: 25rem;
+    padding-left: 2rem;
 }
 
 .home-app-title {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 7rem;
 }
 
-.home-app-title h1 {
+/* .home-app-title h1 {
     font-weight: 900 !important;
+} */
+
+.home-app-section h2 {
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
 }
 
 .home-app-section h3 {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    padding-right: 0.5rem;
     font-size: 2rem;
 }
 
@@ -36,7 +64,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 600px;
+    width: 400px;
     height: 750px;
 }
 
