@@ -1,5 +1,5 @@
 import "./App.css";
-import About from "./views/FAQ/About";
+import FAQ from "./views/FAQ/FAQ";
 
 function App() {
   // return <h1>Home Page</h1>;
