@@ -3,11 +3,7 @@ import About from "./views/About/About";
 
 function App() {
   // return <h1>Home Page</h1>;
-  return (
-    <div className="App">
-      <About/>
-    </div>
-  )
+  return <div className="App"></div>;
 }
 
 export default App;
