@@ -1,4 +1,4 @@
-import "./About.css"
+import "./FAQ.css"
 import Questions from './Questions'
 import {useState} from 'react'
 

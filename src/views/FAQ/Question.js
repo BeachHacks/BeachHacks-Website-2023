@@ -1,4 +1,4 @@
-import "./About.css"
+import "./FAQ.css"
 
 const Question = ({question, onToggle}) => {
   return (
