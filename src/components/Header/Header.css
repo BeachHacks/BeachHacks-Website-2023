@@ -1,64 +1,23 @@
-*{
-    padding: 0;
-    margin: 0;
+img {
+  height: 55px;
+  width: 55px;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+.Icon{
+  height: 25px;
+  width: 25px;
+}
+.MuiToolbar-root{
+  height: 80px;
+  width: 95%;
 }
 
-.header {
-    overflow: hidden;
-    background-color: #ededed;
-    height: 80px;
-    width: 100%;
-  }
-  
-  /* Style the header links */
-  
-  .header button{
-    float: right;
+.MuiButton-root{
     background-color: transparent;
     font-size: 20px;
     border: 10px;
     cursor: pointer;
-    overflow: hidden;
-    margin-left: 20px;
-    padding-top: 30px;
-    padding-right: 40px;
-    }   
-  
-  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */ 
-  .header img {
-    height: 60px;
-    width: 60px;
-    border-radius: 5px;
-    overflow: hidden;
-    padding-top: 10px;
-    padding-left: 20px;
-  }
-  /* Change the background color on mouse-over */
-  .header button:hover {
-    color: black;
-    text-decoration:underline;
-  }
-  
-  /* Style the active/current link*/
-  .header button.active {
-    background-color: #f1f1f1;
-  }
-  
-  /* Float the link section to the right */
-  .header-right {
-    float: none;
-  }
-
-
-  
-  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-  @media screen and (max-width: 500px) {
-    .header button {
-      float: none;
-      display: block;
-      text-align: right;
-    }
-    .header-right {
-      float: left;
-    }
-  }
+}
