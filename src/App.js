@@ -4,23 +4,28 @@ import Header from "./components/Header/Header";
 import Home from "./views/Home/Home";
 import Team from "./views/Team/Team";
 import {Route, Routes} from "react-router-dom";
-import { ClassNames } from "@emotion/react";
-import { makeStyles } from "@mui/material";
 
 
-//const useStyles = makeStyles({})
-export default function App() {
+function App() {
   return (
     <div className="App">
       <Header/>
+       <Routes>
+        <Route path="/Home" element={<Home/>} />
+      </Routes>
     </div>
   );
 }
+export default App;
 
 /*<div className={classes.container}>
       <Header/>
       <Routes>
         <Route exact from="/" render={props => <Home {...props}/>}/>
       </Routes>
+    </div>*/
+
+    /*<div className="App">
+      <Header/>
     </div>*/
 
