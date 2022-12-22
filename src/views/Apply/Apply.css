@@ -6,7 +6,7 @@ button {
     background: #B1B1B1;
     border-radius: 39px;
     border: none;
-    padding: 1rem 2rem;
+    padding: 2% 4.5%;
     align-items: center;
     justify-content: center;
 }
@@ -15,7 +15,7 @@ button {
 .apply-container {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit , minmax(20rem, 50rem));
+    grid-template-columns: repeat(auto-fit , minmax(20rem, 57rem));
     max-width: auto;
 }
 
@@ -57,7 +57,7 @@ button {
 .apply-box {
     background-color: #D9D9D9;
     border-radius: 2rem;
-    padding: 5% 10% 2% 12%;
+    padding: 3% 10% 2% 10%;
     margin: 1.5rem;
 }
 
@@ -66,11 +66,11 @@ button {
 }
 
 .apply-box h3 {
-    font-size: clamp(1rem, 0.7500rem + 1.1111vw, 1.5rem);
+    font-size: clamp(0.75rem, 0.5000rem + 1.1111vw, 1.25rem);
 }
 
 .apply-box-desc {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .apply-box-btn {
