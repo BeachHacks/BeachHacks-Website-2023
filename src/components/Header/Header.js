@@ -18,10 +18,6 @@ import {Link} from 'react-router-dom'
 import ScheduleIcon from "./assets/scheduleIcon.png";
 
 
-const pages = ["Home", "Workshop", "Our Team", "Spotify"];
-const join = ["Join Now"];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-
 const Header = () =>{
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -79,43 +75,92 @@ const Header = () =>{
                   display: { xs: 'block', md: 'none' },
                 }}
               >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/${page}`}>{page}</Link>
+                  <MenuItem onClick={handleCloseNavMenu}>
+                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/Home`}>Home</Link>
                   </MenuItem>
-                ))}
-                {join.map((j) => (
-                  <MenuItem key={j} onClick={handleCloseNavMenu}>
-                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/${j}`}>{j}</Link>
+                  <MenuItem onClick={handleCloseNavMenu}>
+                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/`}>Workshop</Link>
                   </MenuItem>
-                ))}
+                  <MenuItem onClick={handleCloseNavMenu}>
+                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/Team`}>Our Team</Link>
+                  </MenuItem>
+                  <MenuItem onClick={handleCloseNavMenu}>
+                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/`}>Spotify</Link>
+                  </MenuItem>
+                  <MenuItem onClick={handleCloseNavMenu}>
+                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/`}>Join Now</Link>
+                  </MenuItem>
+               
               </Menu>
             </Box>
            
             <Box justifyContent="flex-end" 
             alignItems="flex-end"
             sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>
-              {pages.map((page) => (
                 <Button
-                  key={page}
                   onClick={handleCloseNavMenu}
-                  sx={{fontSize: "18px",color: "#000000", marginLeft: "10px"}}
+                  sx={{
+                    "&.active":{
+                        textDecoration: "underline"
+                    },
+                    fontSize: "18px",
+                    color: "#000000",
+                    marginLeft: "10px"}}
                   variant="text"
                 >
-                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/${page}`}>{page}</Link>
+                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/Home`}>Home</Link>
                 </Button>
-              ))}
-              {join.map((j) => (
                 <Button
-                  key={j}
+                  
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    "&.active":{
+                        textDecoration: "underline"
+                    },
+                    fontSize: "18px",
+                    color: "#000000",
+                    marginLeft: "10px"}}
+                  variant="text"
+                >
+                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/`}>Workshop</Link>
+                </Button>
+
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    "&.active":{
+                        textDecoration: "underline"
+                    },
+                    fontSize: "18px",
+                    color: "#000000",
+                    marginLeft: "10px"}}
+                  variant="text"
+                >
+                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/Team`}>Our Team</Link>
+                </Button>
+                <Button
+                  
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    "&.active":{
+                        textDecoration: "underline"
+                    },
+                    fontSize: "18px",
+                    color: "#000000",
+                    marginLeft: "10px"}}
+                  variant="text"
+                >
+                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/`}>Spotify</Link>
+                </Button>
+                <Button
                   onClick={handleCloseNavMenu}
                   sx={{background: "#c7cbd1", fontSize: "18px",color: "#000000", marginLeft: "10px"}}
                   variant="contained"
                   startIcon={<img class="Icon"src={ScheduleIcon}/>}
                 >
-                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/${j}`}>{j}</Link>
+                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/`}>Join Now</Link>
                 </Button>
-              ))}
+              
             </Box>
 
             

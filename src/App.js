@@ -12,6 +12,7 @@ function App() {
       <Header/>
        <Routes>
         <Route path="/Home" element={<Home/>} />
+        <Route path="/Team" element={<Team/>} />
       </Routes>
     </div>
   );
