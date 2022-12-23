@@ -1,16 +1,11 @@
-
-.ele-container {
-    justify-content: center;
+.faq-container {
+    display: grid;
+    justify-items: center;
     font-family: 'Poppins';
     margin: 193px 0px 193px 0px;
     padding: 0px;
+    max-width: 100%;
 
-}
-
-.faq-container {
-    display: grid;
-    margin: 0px;
-    justify-content: center;
 }
 
 .header h1 {
@@ -19,19 +14,18 @@
     font-weight: 500;
     margin: 0px 0px 10px 0px;
     border: 0px;
-    justify-content: center;
     font-family: 'Poppins';
 }
 
 .question-container {
     padding: 0px 0px 0px 0px;
     height: fit-content;
+    min-width: 70%;
 }
 
 
 .question {
     justify-content: center;
-    width: 975px;
     border-left: 125px solid #D9D9D9;
     border-right: 160px solid #D9D9D9;
     border-top: 28px solid #D9D9D9;

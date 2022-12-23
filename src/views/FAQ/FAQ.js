@@ -63,22 +63,20 @@ const FAQ = () => {
     );
   };
   return (
-    <section className="ele-container">
-      <div className="faq-container" id="faq">
-        {/* FAQ's */}
-        <div className="header">
-          <h1>FAQ</h1>
-        </div>
+    <section className="faq-container" id="faq">
+      {/* FAQ's */}
+      <div className="header">
+        <h1>FAQ</h1>
+      </div>
 
-        {/* Dropdown bars */}
-        {/* <div /* className="question"> */}
-        <div className="question-container">
-          {questions.length > 0 ? (
-            <Questions questions={questions} onToggle={toggleQuestion} />
-          ) : (
-            "None"
-          )}
-        </div>
+      {/* Dropdown bars */}
+      {/* <div /* className="question"> */}
+      <div className="question-container">
+        {questions.length > 0 ? (
+          <Questions questions={questions} onToggle={toggleQuestion} />
+        ) : (
+          "None"
+        )}
       </div>
     </section>
   );
