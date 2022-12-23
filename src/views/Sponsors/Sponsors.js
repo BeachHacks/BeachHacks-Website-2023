@@ -5,7 +5,7 @@ import "./Sponsors.css";
 const Sponsors = () => {
   return (
     <section className="sponsor-view" id="sponsor">
-      <h1 className="title">Our Sponsor</h1>
+      <h1 className="title">Our Sponsors</h1>
       <div className="sponsor">
         <div className="left">
           <div className="top">
