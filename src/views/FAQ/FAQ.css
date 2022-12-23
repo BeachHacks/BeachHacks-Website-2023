@@ -20,7 +20,7 @@
 .question-container {
     padding: 0px 0px 0px 0px;
     height: fit-content;
-    min-width: 70%;
+    width: clamp(18.5rem, 70%, 81rem);
 }
 
 
@@ -52,7 +52,8 @@
     background-color: #F3F3F3;
     margin: 0px;
     padding: 10px;
-
+    font-size: clamp(1rem, 0.9260rem + 0.4000vw, 1.25rem);
+    
 }
 
 .chevron::before {
