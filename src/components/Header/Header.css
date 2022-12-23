@@ -21,3 +21,7 @@ img {
     border: 10px;
     cursor: pointer;
 }
+.MuiButton-root:active{
+  text-decoration: underline;
+  color: black;
+}

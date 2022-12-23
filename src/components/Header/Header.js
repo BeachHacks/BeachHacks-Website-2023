@@ -9,13 +9,11 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import {Link} from 'react-router-dom'
-import ScheduleIcon from "./assets/scheduleIcon.png";
+import ScheduleIcon from "./assets/scheduleIcon.svg";
+import link from '@mui/material/Link';
 
 
 const Header = () =>{
@@ -36,10 +34,11 @@ const Header = () =>{
     const handleCloseUserMenu = () => {
       setAnchorElUser(null);
     };
-  
+
+    
     return (
       <AppBar position="static" elevation={0} sx={{background: "transparent"}}>
-        <Container maxWidth="xl">
+        <Container maxWidth="flex-end">
           <Toolbar disableGutters>
             <img src={Logo}/>
   
@@ -79,16 +78,16 @@ const Header = () =>{
                     <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/Home`}>Home</Link>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/`}>Workshop</Link>
+                  <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Workshop</a>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
                     <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/Team`}>Our Team</Link>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/`}>Spotify</Link>
+                  <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Spotify</a>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/`}>Join Now</Link>
+                  <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Join Now</a>
                   </MenuItem>
                
               </Menu>
@@ -96,16 +95,16 @@ const Header = () =>{
            
             <Box justifyContent="flex-end" 
             alignItems="flex-end"
-            sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>
+            sx={{ flexGrow: 1, 
+                display: { xs: 'none', md: 'flex' }
+                }}>
                 <Button
                   onClick={handleCloseNavMenu}
                   sx={{
-                    "&.active":{
-                        textDecoration: "underline"
-                    },
                     fontSize: "18px",
                     color: "#000000",
-                    marginLeft: "10px"}}
+                    marginLeft: "10px"
+                  }}
                   variant="text"
                 >
                     <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/Home`}>Home</Link>
@@ -114,15 +113,12 @@ const Header = () =>{
                   
                   onClick={handleCloseNavMenu}
                   sx={{
-                    "&.active":{
-                        textDecoration: "underline"
-                    },
                     fontSize: "18px",
                     color: "#000000",
                     marginLeft: "10px"}}
                   variant="text"
                 >
-                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/`}>Workshop</Link>
+                    <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Workshop</a>
                 </Button>
 
                 <Button
@@ -150,7 +146,7 @@ const Header = () =>{
                     marginLeft: "10px"}}
                   variant="text"
                 >
-                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/`}>Spotify</Link>
+                    <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Spotify</a>
                 </Button>
                 <Button
                   onClick={handleCloseNavMenu}
@@ -158,7 +154,7 @@ const Header = () =>{
                   variant="contained"
                   startIcon={<img class="Icon"src={ScheduleIcon}/>}
                 >
-                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/`}>Join Now</Link>
+                    <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Join Now</a>
                 </Button>
               
             </Box>

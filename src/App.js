@@ -13,6 +13,10 @@ function App() {
        <Routes>
         <Route path="/Home" element={<Home/>} />
         <Route path="/Team" element={<Team/>} />
+        <Route path="/Join" component={() => {
+    window.location.href = 'https://www.google.com/';
+    return null;
+    }}/>
       </Routes>
     </div>
   );
