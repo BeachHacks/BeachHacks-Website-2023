@@ -1,0 +1,24 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 12%;
+    text-align: center;
+    background-color: rgb(217, 217, 217);
+    color: white;
+    font-family:'Trebuchet MS';
+    color: black;
+
+}
+
+.social{
+
+    text-align:center;
+    padding-top: 25px;
+    font-size: 25px;
+
+
+
+}
+
+
