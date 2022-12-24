@@ -67,16 +67,18 @@ h3 {
 .home-container {
     display: grid;
     justify-content: center;
-    grid-template-columns: 800px 800px;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 50rem));
+    max-width: 100%;
 }
 .home-box {
     background-color: #D9D9D9;
     border-radius: 20px;
     padding: 20rem 5rem 20rem 17rem;
     margin: 5rem 0 5rem 0;
+    grid-template-columns: repeat(auto-fit, 9rem);
 }
 
-@media only screen and (max-width: 868px) {
+/* @media only screen and (max-width: 868px) {
     .home-container {
         font-size: 6vw;
     }
@@ -99,5 +101,5 @@ h3 {
 
 @media only screen and (max-width: 600px) {
     
-}
+} */
 
