@@ -44,10 +44,6 @@ h3 {
     font-size: 7rem;
 }
 
-/* .home-app-title h1 {
-    font-weight: 900 !important;
-} */
-
 .home-app-section h2 {
     padding-bottom: 0.5rem;
     padding-right: 1rem;
@@ -79,3 +75,29 @@ h3 {
     padding: 20rem 5rem 20rem 17rem;
     margin: 5rem 0 5rem 0;
 }
+
+@media only screen and (max-width: 868px) {
+    .home-container {
+        font-size: 6vw;
+    }
+    .home-app-logo {    
+        margin-top: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0;
+        padding: 0;
+    }
+    .home-app-section {
+        margin-top: 2rem;
+    }
+    .home-app-title {
+        margin: 2rem;
+    }
+    .home-box {
+        margin: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
+
