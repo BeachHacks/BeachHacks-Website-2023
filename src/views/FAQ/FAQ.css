@@ -2,7 +2,7 @@
     display: grid;
     justify-items: center;
     font-family: 'Poppins';
-    margin: 193px 0px 193px 0px;
+    margin: clamp(1rem, -2.3333rem + 17.7778vw, 12rem) 0px clamp(1rem, -2.3333rem + 17.7778vw, 12rem) 0px;
     padding: 0px;
     max-width: 100%;
 
@@ -10,9 +10,9 @@
 
 .header h1 {
     display: flex;
-    font-size: 64px;
+    font-size: clamp(1.5rem, 0.5360rem + 4.2965vw, 4rem);
     font-weight: 500;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px clamp(1.875rem, 2.2538rem + -2.0202vw, 0.625rem) 0px;
     border: 0px;
     font-family: 'Poppins';
 }
@@ -20,20 +20,21 @@
 .question-container {
     padding: 0px 0px 0px 0px;
     height: fit-content;
-    width: clamp(18.5rem, 70%, 81rem);
+    width: clamp(17.5rem, 60%, 81rem);
 }
 
 
 .question {
     justify-content: center;
-    border-left: 125px solid #D9D9D9;
-    border-right: 160px solid #D9D9D9;
-    border-top: 28px solid #D9D9D9;
-    border-bottom: 26px solid #D9D9D9;
+    /* border-left: 125px solid #D9D9D9; */
+    border-left: clamp(0.78rem, -1.3473rem + 11.3455vw, 7.8rem) solid #d9d9d9;
+    border-right: clamp(0.906rem, -1.8498rem + 14.6974vw, 10rem) solid #D9D9D9;
+    border-top: clamp(1.1rem, 0.9030rem + 1.0505vw, 1.75rem) solid #D9D9D9;
+    border-bottom: clamp(1.1rem, 0.9409rem + 0.8485vw, 1.625rem) solid #D9D9D9;
     border-radius: 5px;
     background-clip: border-box;
     margin: 0px 0px 32px 0px;
-    font-size: 20px;
+    font-size: clamp(1rem, 0.9260rem + 0.4000vw, 1.25rem);
     
 }
 .quesiton-box {
@@ -46,6 +47,8 @@
 .question h4 {
     background-color: white;
     margin: 10px;
+    font-size: clamp(1rem, 0.8622rem + 0.7874vw, 1.5rem);
+    overflow-wrap: normal;
 }
 
 .question p {
