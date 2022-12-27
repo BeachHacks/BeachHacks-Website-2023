@@ -1,1 +1,197 @@
-ehuiefhweiufewiuhdfiuhfuie
+h1 {
+    font-size: 2em;
+    font-weight: 500;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0.5em 0 0 0;
+    padding: 0;
+}
+
+.team-container {
+    display: grid;
+    justify-content: left;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 95rem));
+    max-width: 100%;
+    margin-left: 150px;
+}
+
+.about-mini-boxes {
+    margin: 40px;
+    margin-top: 10px;
+    display: grid;
+    grid-gap: 50px;
+    justify-content: left;
+    grid-template-columns: repeat(auto-fit, 9rem);
+}
+.mini-box {
+    margin: 20px 50px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mini-box-circle {
+    background-color: #D9D9D9;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* .mini-box-number {
+    font-size: 35px;
+} */
+
+.mini-box-text {
+    color: #666666;
+    margin: -68px;
+    margin-top: 65px;
+    padding-top: 50px;
+}
+
+.mini-box-number {
+    margin: -20px;
+    margin-top: 110px;
+    padding: 0;
+}
+
+.team-category {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    /* padding-top: 100px; */
+}
+
+.sub-team-category {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    margin-left: 50px;
+    margin-top: 20px;
+    /* padding-top: 100px; */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+        font-weight: 500;
+        margin: 0;
+        margin-top: 1px;
+        margin-left: 20px;
+        margin-right: 10px;
+        padding: 0;
+    
+    }
+    
+    h2 {
+        font-size: .9em;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h3 {
+        font-size: .6em;
+        font-weight: 500;
+        margin: 0.5em 0 0 0;
+        padding: 0;
+    }
+    
+    .team-container {
+        display: grid;
+        justify-content: left;
+        font-family: 'Poppins', sans-serif;
+        margin: 10px;
+        margin-right: -20px;
+        font-style: normal;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 95rem));
+        max-width: 100%;
+    }
+    
+    .about-mini-boxes {
+        margin: 15px;
+        margin-top: 10px;
+        margin-left: 30x;
+        display: grid; 
+        grid-gap: 55px;
+        row-gap: 0px;
+        justify-content: left;
+        grid-template-columns: repeat(auto-fit, 4rem);
+    }
+    .mini-box {
+        margin: 20px 50px 20px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    
+    .mini-box-circle {
+        background-color: #D9D9D9;
+        height: 80px;
+        width: 80px;
+        display: flex;
+        margin-bottom: 5px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    
+    /* .mini-box-number {
+        font-size: 35px;
+    } */
+    
+    .mini-box-text {
+        color: #666666;
+        /* margin: -68px; */
+        margin-top: 20px;
+        /* padding-top: 60px; */
+        margin-right: -54px;
+    }
+    
+    .mini-box-number {
+        margin: -30px;
+        margin-top: 80px;
+        margin-right: 10px;
+        /* padding: 0; */
+    }
+    
+    .team-category {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        margin-left: -10px;
+        /* padding-top: 100px; */
+    }
+    
+    .sub-team-category {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        margin-left: 30px;
+        margin-top: 8px;
+        /* padding-top: 100px; */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+/* styles for screens between 601px and 900px wide */
+}
+
+@media (min-width: 901px) {
+/* styles for screens wider than 901px */
+}
