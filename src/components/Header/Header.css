@@ -1,17 +1,17 @@
 img {
-  height: 55px;
-  width: 55px;
+  height: 60px;
+  width: 65px;
   border-radius: 5px;
   overflow: hidden;
   padding-top: 5px;
   padding-left: 20px;
 }
 .Icon{
-  height: 25px;
-  width: 25px;
+  height: 40px;
+  width: 40px;
 }
 .MuiAppBar-root{
-  height: 80px;
+  height: 90px;
   width: 95%;
 }
 
@@ -24,4 +24,7 @@ img {
 .MuiButton-root:active{
   text-decoration: underline;
   color: black;
+}
+.MuiDrawer-root{
+  margin-left: "auto";
 }

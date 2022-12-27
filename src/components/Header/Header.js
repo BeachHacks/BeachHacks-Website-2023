@@ -5,18 +5,20 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
 import {Link} from 'react-router-dom'
 import ScheduleIcon from "./assets/scheduleIcon.svg";
-import link from '@mui/material/Link';
+import CssBaseline from '@mui/material/CssBaseline';
+import Divider from '@mui/material/Divider';
+import Drawer from '@mui/material/Drawer';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import { Typography } from '@mui/material';
 
-
-const Header = () =>{
+const drawerWidth = "100%";
+const Header = (props) =>{
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
   
@@ -34,71 +36,88 @@ const Header = () =>{
     const handleCloseUserMenu = () => {
       setAnchorElUser(null);
     };
+  const { window } = props;
+  const [mobileOpen, setMobileOpen] = React.useState(false);
+
+  const handleDrawerToggle = () => {
+    setMobileOpen((prevState) => !prevState);
+  };
+
+  const drawer = (
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+        <ListItem sx={{ fontWeight: 'bold' }}>
+            <ListItemButton>
+                <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black", textAlign: "center"}} to={`/Home`} >Home</Link>
+            </ListItemButton>
+        </ListItem>
+        <ListItem sx={{ fontWeight: 'bold' }}>
+            <ListItemButton>
+                <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black", textAlign: "center"}} to={'/'}>About</Link>
+            </ListItemButton>
+        </ListItem>
+        <ListItem sx={{ fontWeight: 'bold' }}>
+            <ListItemButton>
+                <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black", textAlign: "center"}} to={'/'}>Sponsors</Link>
+            </ListItemButton>
+        </ListItem>
+        <ListItem sx={{ fontWeight: 'bold' }}>
+            <ListItemButton>
+                <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black", textAlign: "center"}} to={'/'}>FAQ</Link>
+            </ListItemButton>
+        </ListItem>
+      <Divider sx={{color:"black"}}/>
+      <List sx={{ fontWeight: 'bold' }}>
+          <ListItem >
+            <ListItemButton sx={{ textAlign: 'center' }}>
+            <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Workshop</a>
+            </ListItemButton>
+          </ListItem>
+          <ListItem >
+            <ListItemButton sx={{ textAlign: 'center' }}>
+            <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/Team`}>Our Team</Link>
+            </ListItemButton>
+          </ListItem>
+          <ListItem >
+            <ListItemButton sx={{ textAlign: 'center' }}>
+            <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Spotify</a>
+            </ListItemButton>
+          </ListItem>
+          <ListItem >
+            <ListItemButton sx={{ textAlign: 'center' }}>
+            <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Join Now</a>
+            </ListItemButton>
+          </ListItem>
+      </List>
+    </Box>
+  );
+
+  const container = window !== undefined ? () => window().document.body : undefined;
+
 
     
     return (
-      <AppBar position="static" elevation={0} sx={{background: "transparent"}}>
-        <Container maxWidth="flex-end">
-          <Toolbar disableGutters>
-            <img src={Logo}/>
-  
-            <Box 
-            justifyContent="flex-end" 
-            alignItems="flex-end"
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                color="black"
-              >
-                <MenuIcon />
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: 'bottom',
-                  horizontal: 'left',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'left',
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
-                sx={{
-                  display: { xs: 'block', md: 'none' },
-                }}
-              >
-                  <MenuItem onClick={handleCloseNavMenu}>
-                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/Home`}>Home</Link>
-                  </MenuItem>
-                  <MenuItem onClick={handleCloseNavMenu}>
-                  <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Workshop</a>
-                  </MenuItem>
-                  <MenuItem onClick={handleCloseNavMenu}>
-                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/Team`}>Our Team</Link>
-                  </MenuItem>
-                  <MenuItem onClick={handleCloseNavMenu}>
-                  <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Spotify</a>
-                  </MenuItem>
-                  <MenuItem onClick={handleCloseNavMenu}>
-                  <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Join Now</a>
-                  </MenuItem>
-               
-              </Menu>
-            </Box>
-           
+        <Box sx={{ display: 'flex-end' }}>
+        <CssBaseline />
+        <AppBar  position="static" component="nav" elevation={0} sx={{background: "transparent"}}>
+          <Toolbar>
+          <img src={Logo}/>
+            <IconButton
+              aria-label="account of current user"
+              onClick={handleDrawerToggle}
+              size="large"
+              aria-haspopup="true"
+              aria-controls="menu-appbar"
+              sx={{ display: {xs:'flex', md: 'none' }, marginLeft: "auto"}}
+            >
+              <MenuIcon />
+            </IconButton>
+        
             <Box justifyContent="flex-end" 
             alignItems="flex-end"
             sx={{ flexGrow: 1, 
                 display: { xs: 'none', md: 'flex' }
                 }}>
-                <Button
+              <Button
                   onClick={handleCloseNavMenu}
                   sx={{
                     fontSize: "18px",
@@ -156,13 +175,32 @@ const Header = () =>{
                 >
                     <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Join Now</a>
                 </Button>
-              
             </Box>
-
-            
           </Toolbar>
-        </Container>
-      </AppBar>
+        </AppBar>
+        <Box component="nav">
+          <Drawer
+            container={container}
+            variant="temporary"
+            open={mobileOpen}
+            onClose={handleDrawerToggle}
+            anchor="right"
+            ModalProps={{
+              keepMounted: true, // Better open performance on mobile.
+            }}
+            sx={{
+              display: { xs: 'block', md: 'none' },
+              '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+
+            }}
+          >
+           {drawer}
+          </Drawer>
+        </Box>
+        <Box component="main" sx={{ p: 3 }}>
+          <Toolbar />
+          </Box>
+    </Box>
     );
   }
 export default Header;
