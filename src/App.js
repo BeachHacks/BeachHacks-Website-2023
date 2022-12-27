@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Home from "./views/Home/Home";
 import Team from "./views/Team/Team";
 import {Route, Routes} from "react-router-dom";
-
+import Footer from "./components/Footer/Footer"
 
 function App() {
   return (
@@ -20,17 +20,5 @@ function App() {
       </Routes>
     </div>
   );
-}
+  
 export default App;
-
-/*<div className={classes.container}>
-      <Header/>
-      <Routes>
-        <Route exact from="/" render={props => <Home {...props}/>}/>
-      </Routes>
-    </div>*/
-
-    /*<div className="App">
-      <Header/>
-    </div>*/
-
