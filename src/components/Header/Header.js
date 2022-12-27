@@ -19,12 +19,9 @@ import { Typography } from '@mui/material';
 
 const drawerWidth = "100%";
 const Header = (props) =>{
-    const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const [anchorElUser, setAnchorElUser] = React.useState(null);
+    const [setAnchorElNav] = React.useState(null);
+    const [setAnchorElUser] = React.useState(null);
   
-    const handleOpenNavMenu = (event) => {
-      setAnchorElNav(event.currentTarget);
-    };
     const handleOpenUserMenu = (event) => {
       setAnchorElUser(event.currentTarget);
     };
@@ -45,6 +42,7 @@ const Header = (props) =>{
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+        {/* Buttons on top half of divider */}
         <ListItem sx={{ fontWeight: 'bold' }}>
             <ListItemButton>
                 <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black", textAlign: "center"}} to={`/Home`} >Home</Link>
@@ -52,7 +50,7 @@ const Header = (props) =>{
         </ListItem>
         <ListItem sx={{ fontWeight: 'bold' }}>
             <ListItemButton>
-                <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black", textAlign: "center"}} to={'/'}>About</Link>
+                <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black", textAlign: "center"}} to={'/About'}>About</Link>
             </ListItemButton>
         </ListItem>
         <ListItem sx={{ fontWeight: 'bold' }}>
@@ -66,6 +64,8 @@ const Header = (props) =>{
             </ListItemButton>
         </ListItem>
       <Divider sx={{color:"black"}}/>
+
+      {/* Buttons on bottom half of divider */}
       <List sx={{ fontWeight: 'bold' }}>
           <ListItem >
             <ListItemButton sx={{ textAlign: 'center' }}>
@@ -98,9 +98,12 @@ const Header = (props) =>{
     return (
         <Box sx={{ display: 'flex-end' }}>
         <CssBaseline />
+        {/* start of AppBar */}
         <AppBar  position="static" component="nav" elevation={0} sx={{background: "transparent"}}>
           <Toolbar>
-          <img src={Logo}/>
+
+        {/* Beachhacks logo */}
+          <img  src={Logo}/>
             <IconButton
               aria-label="account of current user"
               onClick={handleDrawerToggle}
@@ -108,10 +111,11 @@ const Header = (props) =>{
               aria-haspopup="true"
               aria-controls="menu-appbar"
               sx={{ display: {xs:'flex', md: 'none' }, marginLeft: "auto"}}
+              justifyContent="flex-end"
             >
               <MenuIcon />
             </IconButton>
-        
+            {/* Buttons in the Header */}
             <Box justifyContent="flex-end" 
             alignItems="flex-end"
             sx={{ flexGrow: 1, 
@@ -177,7 +181,9 @@ const Header = (props) =>{
                 </Button>
             </Box>
           </Toolbar>
+         
         </AppBar>
+        {/* creates the drawer frame */}
         <Box component="nav">
           <Drawer
             container={container}
@@ -197,11 +203,8 @@ const Header = (props) =>{
            {drawer}
           </Drawer>
         </Box>
-        <Box component="main" sx={{ p: 3 }}>
-          <Toolbar />
-          </Box>
+        
     </Box>
     );
   }
 export default Header;
-
