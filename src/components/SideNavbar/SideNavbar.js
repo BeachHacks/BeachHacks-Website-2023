@@ -1,8 +1,41 @@
-import styles from "./sidenav.module.css"
+import styles from "./SideNavbar.module.css"
 import { NavLink } from "react-router-dom";
-import { navData } from "../lib/navData";
 import { useState } from "react";
-import ReorderOutlinedIcon from '@mui/icons-material/ReorderOutlined';
+import DensityMediumSharpIcon from '@mui/icons-material/DensityMediumSharp';
+
+// ============= navData.js ============================================
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import MonetizationOnOutlinedIcon from '@mui/icons-material/MonetizationOnOutlined';
+import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined';
+ 
+export const navData = [
+    {
+        id: 0,
+        icon: <HomeOutlinedIcon/>,
+        text: "Home",
+        link: "/"
+    },
+    {
+        id: 1,
+        icon: <InfoOutlinedIcon/>,
+        text: "About",
+        link: "about"
+    },
+    {
+        id: 2,
+        icon: <MonetizationOnOutlinedIcon/>,
+        text: "Sponsors",
+        link: "sponsors"
+    },
+    {
+        id: 3,
+        icon: <LiveHelpOutlinedIcon/>,
+        text: "FAQ",
+        link: "faq"
+    }
+]
+// =================================================================
 
 export default function Sidenav() {
 
@@ -13,7 +46,7 @@ export default function Sidenav() {
   return (
     <div className={open?styles.sidenav:styles.sidenavClosed}>
         <button className={styles.menuBtn} onClick={toggleOpen}>
-            {open? <ReorderOutlinedIcon />: <ReorderOutlinedIcon />}
+            {open? <DensityMediumSharpIcon />: <DensityMediumSharpIcon />}
         </button>
         {navData.map(item =>{
             return <NavLink key={item.id} className={styles.sideitem} to={item.link}>
