@@ -83,7 +83,7 @@ const Header = (props) =>{
               <ListItemIcon>
                 <img className='Icon' src={SponsorIcon}/>
               </ListItemIcon>
-                <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={'/'}>Sponsors</Link>
+              <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank">Sponsors</a>
             </ListItemButton>
         </ListItem>
         <ListItem sx={{ fontWeight: 'bold' }}>
