@@ -33,11 +33,11 @@
 
 .sideitem:hover  {
     background-color: #244f7d1c;
-    color: black;
+    /*color: black;
     position: absolute;
     right: 0px;
     transition: left 0.3s;
-    width: 170px;
+    width: 170px;*/
 }
 
 .menuBtn {
