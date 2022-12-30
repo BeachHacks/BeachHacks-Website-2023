@@ -1,6 +1,13 @@
 import * as React from 'react';
 import "./Header.css";
 import Logo from "./assets/bhLogoBrick.png";
+import ScheduleIcon from './assets/akar-icons_schedule.svg';
+import AboutIcon from './assets/heroicons_information-circle.svg';
+import HomeIcon from './assets/clarity_home-line.svg';
+import SponsorIcon from './assets/simple-icons_githubsponsors.svg';
+import FAQIcon from './assets/akar-icons_chat-question.svg';
+import SpotifyIcon from './assets/ph_spotify-logo-light.svg';
+import TeamIcon from './assets/fluent_people-team-20-regular.svg';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -8,59 +15,83 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
 import {Link} from 'react-router-dom'
-import ScheduleIcon from "./assets/scheduleIcon.svg";
 import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import { Typography } from '@mui/material';
+import { styled, useTheme } from '@mui/material/styles';
+import { ListItemIcon} from '@mui/material';
+import ClearIcon from '@mui/icons-material/Clear';
+
 
 const drawerWidth = "100%";
+const DrawerHeader = styled('div')(({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+  padding: theme.spacing(0, 1),
+  // necessary for content to be below app bar
+  ...theme.mixins.toolbar,
+  justifyContent: 'flex-end',
+}));
 const Header = (props) =>{
     const [setAnchorElNav] = React.useState(null);
-    const [setAnchorElUser] = React.useState(null);
-  
-    const handleOpenUserMenu = (event) => {
-      setAnchorElUser(event.currentTarget);
-    };
+    const [setOpen] = React.useState(false);
   
     const handleCloseNavMenu = () => {
       setAnchorElNav(null);
     };
-  
-    const handleCloseUserMenu = () => {
-      setAnchorElUser(null);
+  //used to close the drawer
+    const handleDrawerClose = () => {
+      setOpen(false);
     };
+  
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
-
+//contents inside the drawer
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+      <DrawerHeader>
+          <IconButton onClick={handleDrawerClose}>
+            {<ClearIcon sx={{color: 'black'}}/>}
+          </IconButton>
+        </DrawerHeader>
         {/* Buttons on top half of divider */}
         <ListItem sx={{ fontWeight: 'bold' }}>
             <ListItemButton>
-                <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black", textAlign: "center"}} to={`/Home`} >Home</Link>
+              <ListItemIcon>
+                <img class="Icon"src={HomeIcon}/>
+              </ListItemIcon>
+                <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={`/Home`} >Home</Link>
             </ListItemButton>
         </ListItem>
         <ListItem sx={{ fontWeight: 'bold' }}>
             <ListItemButton>
-                <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black", textAlign: "center"}} to={'/About'}>About</Link>
+              <ListItemIcon>
+                <img class="Icon"src={AboutIcon}/>
+              </ListItemIcon>
+                <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={'/About'}>About</Link>
             </ListItemButton>
         </ListItem>
         <ListItem sx={{ fontWeight: 'bold' }}>
             <ListItemButton>
-                <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black", textAlign: "center"}} to={'/'}>Sponsors</Link>
+              <ListItemIcon>
+                <img className='Icon' src={SponsorIcon}/>
+              </ListItemIcon>
+              <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank">Sponsors</a>
             </ListItemButton>
         </ListItem>
         <ListItem sx={{ fontWeight: 'bold' }}>
             <ListItemButton>
-                <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black", textAlign: "center"}} to={'/'}>FAQ</Link>
+              <ListItemIcon>
+                <img class="Icon"src={FAQIcon}/>
+              </ListItemIcon>
+                <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={'/FAQ'}>FAQ</Link>
             </ListItemButton>
         </ListItem>
       <Divider sx={{color:"black"}}/>
@@ -69,22 +100,26 @@ const Header = (props) =>{
       <List sx={{ fontWeight: 'bold' }}>
           <ListItem >
             <ListItemButton sx={{ textAlign: 'center' }}>
-            <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Workshop</a>
+            <ListItemIcon>
+                <img class="Icon"src={TeamIcon}/>
+              </ListItemIcon>
+            <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} to={`/Team`}>Our Team</Link>
             </ListItemButton>
           </ListItem>
           <ListItem >
             <ListItemButton sx={{ textAlign: 'center' }}>
-            <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/Team`}>Our Team</Link>
+            <ListItemIcon>
+                <img class="Icon"src={SpotifyIcon}/>
+              </ListItemIcon>
+            <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank">Spotify</a>
             </ListItemButton>
           </ListItem>
           <ListItem >
             <ListItemButton sx={{ textAlign: 'center' }}>
-            <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Spotify</a>
-            </ListItemButton>
-          </ListItem>
-          <ListItem >
-            <ListItemButton sx={{ textAlign: 'center' }}>
-            <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Join Now</a>
+            <ListItemIcon>
+                <img class="Icon"src={ScheduleIcon}/>
+              </ListItemIcon>
+            <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank">Schedule</a>
             </ListItemButton>
           </ListItem>
       </List>
@@ -93,8 +128,6 @@ const Header = (props) =>{
 
   const container = window !== undefined ? () => window().document.body : undefined;
 
-
-    
     return (
         <Box sx={{ display: 'flex-end' }}>
         <CssBaseline />
@@ -173,9 +206,9 @@ const Header = (props) =>{
                 </Button>
                 <Button
                   onClick={handleCloseNavMenu}
-                  sx={{background: "#c7cbd1", fontSize: "18px",color: "#000000", marginLeft: "10px"}}
+                  sx={{background: "#c7cbd1", fontSize: "16px", textDecoration: "none", marginLeft: "10px"}}
                   variant="contained"
-                  startIcon={<img class="Icon"src={ScheduleIcon}/>}
+                  startIcon={<img class="Schedule"src={ScheduleIcon}/>}
                 >
                     <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Join Now</a>
                 </Button>

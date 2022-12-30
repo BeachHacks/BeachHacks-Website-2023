@@ -10,6 +10,11 @@ img {
   height: 40px;
   width: 40px;
 }
+.Schedule{
+  height: 30px;
+  width: 30px;
+  align-items: center;
+}
 
 .MuiButton-text{
     background-color: transparent;
