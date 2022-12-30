@@ -1,0 +1,51 @@
+.sidenav {
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    padding-top: 28px;
+    position: absolute;
+    right: 20px;
+}
+.sidenavClosed {
+    composes: sidenav;
+    transition: width 0.3s ease-in-out;
+    width: 60px
+}
+.sideitem {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    overflow: hidden;
+    margin-left: 50px;
+}
+.linkText {
+    padding-left: 16px;
+}
+
+.sideitem:hover {
+    background-color: #244f7d1c;
+
+}
+.menuBtn {
+    align-self: center;
+    align-self: flex-start;  
+    justify-self: flex-end;
+    color: black;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.icon {
+    position: absolute;
+    right: 0;
+}
+
+.sideitem-separator {
+    border-bottom: 1px solid black;
+  }
