@@ -30,6 +30,9 @@ const Sponsors = () => {
         <div className="right">
           <div className="big-sponsor"></div>
         </div>
+        <div className="sponsor-btn">
+          <button className="btn">Become a Sponsor</button>
+        </div>
       </div>
     </section>
   );
