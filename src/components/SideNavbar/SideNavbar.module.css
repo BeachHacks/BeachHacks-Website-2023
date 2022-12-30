@@ -7,13 +7,13 @@
     right: 0px;
     position: absolute;
     top: 33%;
-    
-   
+
 }
 .sidenavClosed {
     composes: sidenav;
     transition: width 0.3s ease-in-out;
     width: 60px;
+    
 
 }
 .sideitem {
@@ -25,17 +25,21 @@
     color: #000000;
     text-decoration: none;
     overflow: hidden;
-    
 }
 .linkText {
     padding-left: 25px;
     font-weight: bold;
 }
 
-.sideitem:hover {
+.sideitem:hover  {
     background-color: #244f7d1c;
-
+    color: black;
+    position: absolute;
+    right: 0px;
+    transition: left 0.3s;
+    width: 170px;
 }
+
 .menuBtn {
     align-self: center;
     align-self: flex-start;  
@@ -48,3 +52,4 @@
     padding-left: 20px;
     padding-bottom: 6px;
 }
+
