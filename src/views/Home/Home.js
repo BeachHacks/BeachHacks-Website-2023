@@ -15,7 +15,7 @@ const Home = () => {
             
             <div className="home-box-section">
                 <div className="home-box">
-                    <h2 className="home-box-title">3D ISOMETRIC ART?</h2>
+                    <h2>3D ISOMETRIC ART?</h2>
                 </div>
             </div>
         </section>
