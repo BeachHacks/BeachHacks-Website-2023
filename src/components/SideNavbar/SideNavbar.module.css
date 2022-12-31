@@ -1,7 +1,7 @@
 .sidenav {
     width: 200px;
     transition: width 0.3s ease-in-out;
-    height: 25vh;
+    height: 30vh;
     background-color: rgb(217, 216, 218);
     padding-top: 28px;
     right: 0px;
