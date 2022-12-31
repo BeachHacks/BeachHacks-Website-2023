@@ -11,8 +11,8 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <SideNavBar />
-      {/* <Header />
+//       <SideNavBar />
+      {<Header />
       <Routes>
         <Route path="/Home" element={<Home />} />
         <Route path="/Team" element={<Team />} />
@@ -25,7 +25,7 @@ function App() {
             return null;
           }}
         />
-      </Routes> */}
+      </Routes>
     </div>
   );
 }
