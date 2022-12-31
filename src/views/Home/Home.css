@@ -82,5 +82,8 @@ h3 {
 
 .home-box h2 {
     padding: 30% 10% 30% 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
