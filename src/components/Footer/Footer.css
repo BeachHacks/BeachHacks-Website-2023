@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 12%;
+    text-align: center;
+    background-color: rgb(217, 217, 217);
+    font-family: 'Trebuchet MS';
+    color: black;
+
+}
+
+.social {
+
+    text-align: center;
+    padding-top: 25px;
+    font-size: 25px;
+
+}
+
+.social a {
+
+    font-size: 25px;
+    color: inherit;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+
+
+
+}
+
+.social a:hover {
+
+    opacity: 0.7;
+
+}
+
+
+/*rgb(217, 217, 217);*/
