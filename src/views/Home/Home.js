@@ -1,15 +1,15 @@
 import "./Home.css";
-import bh_logo from "../../assets/bh_logo.svg";
+
 
 const Home = () => {
     return (
         <section className="home-container" id="home">
             <div className="home-app-section">
                 <div className="home-app-title">
-                    <img src={bh_logo} alt="BeachHacks" className="home-app-logo" />   
+                    <h1>BeachHacks</h1>   
                 </div>
-                <h2>Date, 2023</h2>
-                <h3>Get Involved</h3>
+                <h3>Date, 2023</h3>
+                <h2>Get Involved</h2>
                 <button>Apply Now</button>
             </div>
             
