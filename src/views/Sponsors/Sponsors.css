@@ -25,6 +25,10 @@ h3 {
     padding: 0;
 }
 
+.a {
+    justify-self: center;
+}
+
 .title {
     display: flex;
     justify-content: center;

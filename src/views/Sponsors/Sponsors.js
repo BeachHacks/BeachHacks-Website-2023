@@ -31,7 +31,9 @@ const Sponsors = () => {
           <div className="big-sponsor"></div>
         </div>
         <div className="sponsor-btn">
-          <button className="btn">Become a Sponsor</button>
+          <a href="https://google.com">
+            <button className="btn">Become a Sponsor</button>
+          </a>
         </div>
       </div>
     </section>
