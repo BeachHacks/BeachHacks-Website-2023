@@ -81,6 +81,7 @@
 }
 
 .chevron.top:before {
+    margin: 35px 0px 0px 66px;
 	top: 0;
 
 }
