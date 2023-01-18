@@ -33,6 +33,7 @@ const FAQ = () => {
           graduated within the past year. Click [here] to submit your
           registration!
           <br />
+          <br />
           Due to the limited space, we have a cap of 150 participants. Once
           we've received all the registrations, we'll send out emails to let you
           know if you've been selected to participate. We'll do our best to
@@ -50,6 +51,7 @@ const FAQ = () => {
         <>
           We're thrilled that you're interested in joining us for BeachHacks! To
           register, simply fill out the registration form on our website.
+          <br />
           <br />
           Due to the limited space, we have a cap of 150 participants. Once
           we've received all the registrations, we'll send out emails to let you
@@ -70,6 +72,7 @@ const FAQ = () => {
           development, software development, hardware, game development, data
           science, artificial intelligence, virtual reality, internet of things,
           and many more.
+          <br />
           <br />
           However, it's important to note that all projects must be started
           during the event and should not be pre-existing projects. This is to
