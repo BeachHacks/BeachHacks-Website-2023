@@ -48,9 +48,11 @@
 
 .question h4 {
     background-color: white;
-    margin: 10px;
+    margin: 10px 10px 10px 10px;
     font-size: clamp(1rem, 0.8622rem + 0.7874vw, 1.5rem);
     overflow-wrap: normal;
+
+    
 }
 
 .question p {
@@ -70,7 +72,7 @@
 	content: '';
 	display: inline-block;
 	height: 0.45em;
-    left: 7em;
+    left: 4rem;
 	position: relative;
 	top: 0.15em;
 	transform: rotate(-45deg);
@@ -84,8 +86,26 @@
 }
 
 .chevron.top:before {
+	top: 1rem;
     
-	top: 1em;
-    left: 10em;
+}
 
+.top {
+    display: grid;
+    width: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 10rem));
+    grid-gap: 1rem 1rem;
+    justify-content: end;
+    align-items: center;
+    justify-items: center;
+}
+
+.bottom {
+    display: grid;
+    width: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 10rem));
+    grid-gap: 1rem 1rem;
+    justify-content: end;
+    align-items: center;
+    justify-items: center;
 }
