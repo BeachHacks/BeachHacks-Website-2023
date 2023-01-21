@@ -2,7 +2,7 @@
     width: 200px;
     transition: width 0.3s ease-in-out;
     height: 30vh;
-    background-color: rgb(217, 216, 218);
+    background-color: #04121C;
     padding-top: 28px;
     right: 0px;
     position: absolute;
@@ -24,7 +24,7 @@
 
     padding: 12px 20px;
     cursor: pointer;
-    color: #000000;
+    color: #DFF2FF;
     text-decoration: none;
     overflow: hidden;
 }
@@ -35,7 +35,8 @@
 }
 
 .sideitem:hover {
-    background-color: #244f7d1c;
+    background-color: #FFFFFF;
+    color: black;
     /*color: black;
     position: absolute;
     right: 0px;
@@ -47,7 +48,7 @@
     align-self: center;
     align-self: flex-start;
     justify-self: flex-end;
-    color: #000000;
+    color: #FFFFFF;
     background-color: transparent;
     border: none;
     cursor: pointer;
