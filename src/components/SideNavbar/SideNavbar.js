@@ -1,5 +1,4 @@
 import styles from "./SideNavbar.module.css";
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import DensityMediumSharpIcon from "@mui/icons-material/DensityMediumSharp";
 
@@ -13,25 +12,25 @@ export const navData = [
     id: 0,
     icon: <HomeOutlinedIcon />,
     text: "Home",
-    link: "/",
+    link: "#",
   },
   {
     id: 1,
     icon: <InfoOutlinedIcon />,
     text: "About",
-    link: "about",
+    link: "#about",
   },
   {
     id: 2,
     icon: <MonetizationOnOutlinedIcon />,
     text: "Sponsors",
-    link: "sponsors",
+    link: "#sponsors",
   },
   {
     id: 3,
     icon: <LiveHelpOutlinedIcon />,
     text: "FAQ",
-    link: "faq",
+    link: "#faq",
   },
 ];
 // =================================================================
@@ -48,10 +47,10 @@ const SideNavBar = () => {
       </button>
       {navData.map((item) => {
         return (
-          <NavLink key={item.id} className={styles.sideitem} to={item.link}>
+          <a key={item.id} className={styles.sideitem} href={item.link}>
             {item.icon}
             <span className={styles.linkText}>{item.text}</span>
-          </NavLink>
+          </a>
         );
       })}
     </div>

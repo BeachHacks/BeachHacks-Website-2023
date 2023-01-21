@@ -24,7 +24,7 @@ h3 {
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 53rem));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 57rem));
     max-width: 100%;
 }
 

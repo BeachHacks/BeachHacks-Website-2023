@@ -8,7 +8,7 @@ const About = () => {
     return (
         <section className="about-container" id="about">
             {/* test comment */}
-            <div className="about-photo">
+            <div className="container about-photo">
                 <h1 className="about-photo-text">Photo</h1>
             </div>
             <div className="about-text-box">
@@ -21,28 +21,28 @@ const About = () => {
             </div>
             <div className="about-mini-boxes">
                 <div className="mini-box">
-                    <div className="mini-box-icon">
+                    <div className="container mini-box-icon">
                         <img src={Cap} alt="Students"/>
                     </div>
                     <h2 className="mini-box-number">700+</h2>
                     <h3 className="mini-box-text">Students</h3>
                 </div>
                 <div className="mini-box">
-                    <div className="mini-box-icon">
+                    <div className="container mini-box-icon">
                         <img src={Globe} alt="Countries"/>
                     </div>
                     <h2 className="mini-box-number">10+</h2>
                     <h3 className="mini-box-text">Countries</h3>
                 </div>
                 <div className="mini-box">
-                    <div className="mini-box-icon">
+                    <div className="container mini-box-icon">
                         <img src={Clock} alt="Hours"/>
                     </div>
                     <h2 className="mini-box-number">144+</h2>
                     <h3 className="mini-box-text">Hours</h3>
                 </div>
                 <div className="mini-box">
-                    <div className="mini-box-icon">
+                    <div className="container mini-box-icon">
                         <img src={Folder} alt="Projects"/>
                     </div>
                     <h2 className="mini-box-number">120+</h2>

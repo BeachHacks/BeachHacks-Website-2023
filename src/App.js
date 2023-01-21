@@ -5,13 +5,12 @@ import Home from "./views/Home/Home";
 import About from "./views/About/About";
 import Sponsors from "./views/Sponsors/Sponsors";
 import FAQ from "./views/FAQ/FAQ";
-import SideNavBar from "./components/SideNavbar/SideNavbar";
 import { Route, Routes } from "react-router-dom";
+// import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <SideNavBar />
       <Header />
       <Routes>
         <Route path="/Home" element={<Home />} />
@@ -31,6 +30,7 @@ function App() {
           }}
         /> */}
       </Routes>
+      {/* <Footer /> */}
     </div>
   );
 }

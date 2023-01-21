@@ -1,15 +1,4 @@
-button {
-    display: flex;
-    font-family: Poppins;
-    font-weight: 600 !important;
-    font-size: clamp(1rem, 0.7500rem + 1.1111vw, 1.5rem);
-    background: #B1B1B1;
-    border-radius: 39px;
-    border: none;
-    padding: 2% 4.5%;
-    align-items: center;
-    justify-content: center;
-}
+
 
 /* Container for the section handles the grid */
 .apply-container {
@@ -43,7 +32,7 @@ button {
     text-overflow: ellipsis;
 }
 
-.apply-app-title h1 {
+/* .apply-app-title h1 {
     font-weight: 900 !important;
     font-size: clamp(2.8rem, 1.7000rem + 4.8889vw, 5rem);
 }
@@ -51,7 +40,7 @@ button {
 .apply-app-section h3 {
     padding-bottom: 2rem;
     font-size: clamp(1.5rem, 1.2500rem + 1.1111vw, 2rem);
-}
+} */
 
 /* Box Applications Right Side */
 .apply-box {
@@ -65,9 +54,9 @@ button {
     font-size: clamp(1.5rem, 0.7500rem + 3.3333vw, 3rem);
 }
 
-.apply-box h3 {
+/* .apply-box h3 {
     font-size: clamp(0.75rem, 0.5000rem + 1.1111vw, 1.25rem);
-}
+} */
 
 .apply-box-desc {
     padding-bottom: 1rem;

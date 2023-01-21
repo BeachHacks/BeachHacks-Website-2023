@@ -1,12 +1,15 @@
 .sidenav {
     width: 200px;
     transition: width 0.3s ease-in-out;
-    height: 30vh;
-    background-color: rgb(217, 216, 218);
-    padding-top: 28px;
+    height: auto;
+    background-color: var(--primary-focus);
+    padding: 1em 0;
     right: 0px;
     position: absolute;
     top: 33%;
+    position: fixed;
+    margin-right: 1em;
+    border-radius: 1em;
 
 }
 
@@ -24,7 +27,7 @@
 
     padding: 12px 20px;
     cursor: pointer;
-    color: #000000;
+    color: var(--primary-color);
     text-decoration: none;
     overflow: hidden;
 }
@@ -35,7 +38,7 @@
 }
 
 .sideitem:hover {
-    background-color: #244f7d1c;
+    background-color: var(--base-100);
     /*color: black;
     position: absolute;
     right: 0px;
@@ -47,11 +50,17 @@
     align-self: center;
     align-self: flex-start;
     justify-self: flex-end;
-    color: #000000;
+    color: var(--primary-color);
     background-color: transparent;
     border: none;
     cursor: pointer;
 
     padding-left: 20px;
     padding-bottom: 6px;
+}
+
+@media screen and (max-width: 800px) {
+    .sidenav {
+        display: none;
+    }
 }

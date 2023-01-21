@@ -21,7 +21,7 @@ import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import { styled, useTheme } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import { ListItemIcon} from '@mui/material';
 import ClearIcon from '@mui/icons-material/Clear';
 
@@ -65,7 +65,7 @@ const Header = (props) =>{
         <ListItem sx={{ fontWeight: 'bold' }}>
             <ListItemButton>
               <ListItemIcon>
-                <img class="Icon"src={HomeIcon}/>
+                <img alt='' class="Icon"src={HomeIcon}/>
               </ListItemIcon>
                 <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={`/Home`} >Home</Link>
             </ListItemButton>
@@ -73,7 +73,7 @@ const Header = (props) =>{
         <ListItem sx={{ fontWeight: 'bold' }}>
             <ListItemButton>
               <ListItemIcon>
-                <img class="Icon"src={AboutIcon}/>
+                <img alt="" class="Icon"src={AboutIcon}/>
               </ListItemIcon>
                 <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={'/About'}>About</Link>
             </ListItemButton>
@@ -81,15 +81,15 @@ const Header = (props) =>{
         <ListItem sx={{ fontWeight: 'bold' }}>
             <ListItemButton>
               <ListItemIcon>
-                <img className='Icon' src={SponsorIcon}/>
+                <img alt="" className='Icon' src={SponsorIcon}/>
               </ListItemIcon>
-              <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank">Sponsors</a>
+              <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Sponsors</a>
             </ListItemButton>
         </ListItem>
         <ListItem sx={{ fontWeight: 'bold' }}>
             <ListItemButton>
               <ListItemIcon>
-                <img class="Icon"src={FAQIcon}/>
+                <img alt="" class="Icon"src={FAQIcon}/>
               </ListItemIcon>
                 <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={'/FAQ'}>FAQ</Link>
             </ListItemButton>
@@ -101,7 +101,7 @@ const Header = (props) =>{
           <ListItem >
             <ListItemButton sx={{ textAlign: 'center' }}>
             <ListItemIcon>
-                <img class="Icon"src={TeamIcon}/>
+                <img alt="" class="Icon"src={TeamIcon}/>
               </ListItemIcon>
             <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} to={`/Team`}>Our Team</Link>
             </ListItemButton>
@@ -109,17 +109,17 @@ const Header = (props) =>{
           <ListItem >
             <ListItemButton sx={{ textAlign: 'center' }}>
             <ListItemIcon>
-                <img class="Icon"src={SpotifyIcon}/>
+                <img alt="" class="Icon"src={SpotifyIcon}/>
               </ListItemIcon>
-            <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank">Spotify</a>
+            <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Spotify</a>
             </ListItemButton>
           </ListItem>
           <ListItem >
             <ListItemButton sx={{ textAlign: 'center' }}>
             <ListItemIcon>
-                <img class="Icon"src={ScheduleIcon}/>
+                <img alt="" class="Icon"src={ScheduleIcon}/>
               </ListItemIcon>
-            <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank">Schedule</a>
+            <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Schedule</a>
             </ListItemButton>
           </ListItem>
       </List>
@@ -132,11 +132,11 @@ const Header = (props) =>{
         <Box sx={{ display: 'flex-end' }}>
         <CssBaseline />
         {/* start of AppBar */}
-        <AppBar  position="static" component="nav" elevation={0} sx={{background: "transparent"}}>
+        <AppBar  position="static" component="nav" elevation={0} sx={{background: "var(--primary-color)"}}>
           <Toolbar>
 
         {/* Beachhacks logo */}
-          <img  src={Logo}/>
+          <img className='logoImg' alt='our logo :)'src={Logo} sx={{padding: '10px'}}/>
             <IconButton
               aria-label="account of current user"
               onClick={handleDrawerToggle}
@@ -174,7 +174,7 @@ const Header = (props) =>{
                     marginLeft: "10px"}}
                   variant="text"
                 >
-                    <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Workshop</a>
+                    <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Workshop</a>
                 </Button>
 
                 <Button
@@ -202,15 +202,17 @@ const Header = (props) =>{
                     marginLeft: "10px"}}
                   variant="text"
                 >
-                    <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Spotify</a>
+                    <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Spotify</a>
                 </Button>
                 <Button
                   onClick={handleCloseNavMenu}
-                  sx={{background: "#c7cbd1", fontSize: "16px", textDecoration: "none", marginLeft: "10px"}}
+                  sx={{background: "(--primary-color)", fontSize: "16px", textDecoration: "none", marginLeft: "10px", color:"white"}}
                   variant="contained"
-                  startIcon={<img class="Schedule"src={ScheduleIcon}/>}
+                  centered
+
                 >
-                    <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Join Now</a>
+                    
+                    <a style={{fontFamily: "Poppins",textDecoration: "none", color: "var(--primary-color)"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Join Now</a>
                 </Button>
             </Box>
           </Toolbar>

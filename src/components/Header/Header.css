@@ -1,10 +1,16 @@
+* {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600;
+}
+
 img {
-  height: 60px;
+
   width: 65px;
   border-radius: 5px;
   overflow: hidden;
   padding-top: 5px;
   padding-left: 5px;
+  aspect-ratio: 1/1;
 }
 .Icon{
   height: 40px;
@@ -24,8 +30,21 @@ img {
 }
 .MuiButton-root:active{
   text-decoration: underline;
-  color: black;
+
 }
 .MuiDrawer-root{
   margin-left: "auto";
+
+}
+
+.MuiButton-startIcon	{
+  color: var(--primary-focus);
+}
+ .MuiBox-root {
+  align-items: center !important;
+}
+.logoImg{
+  margin: 0.1rem;
+  aspect-ratio: 1/1;
+  width: 3rem;
 }
