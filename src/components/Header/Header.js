@@ -1,13 +1,13 @@
 import * as React from 'react';
 import "./Header.css";
 import Logo from "./assets/bhLogoBrick.png";
-import ScheduleIcon from './assets/akar-icons_schedule.svg';
-import AboutIcon from './assets/heroicons_information-circle.svg';
-import HomeIcon from './assets/clarity_home-line.svg';
-import SponsorIcon from './assets/simple-icons_githubsponsors.svg';
-import FAQIcon from './assets/akar-icons_chat-question.svg';
-import SpotifyIcon from './assets/ph_spotify-logo-light.svg';
-import TeamIcon from './assets/fluent_people-team-20-regular.svg';
+import ScheduleIcon from './assets/white_schedule_icon.svg';
+import AboutIcon from './assets/information_circle_light.svg';
+import HomeIcon from './assets/home_icon_light.svg';
+import SponsorIcon from './assets/money_icon_light.svg';
+import FAQIcon from './assets/FAQ_icon_light.svg';
+import SpotifyIcon from './assets/spotify_icon_light.svg';
+import TeamIcon from './assets/team_icon_light.svg';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -19,12 +19,10 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
+import ListItem from "@material-ui/core/ListItem";
 import { styled, useTheme } from '@mui/material/styles';
 import { ListItemIcon} from '@mui/material';
 import ClearIcon from '@mui/icons-material/Clear';
-
 
 const drawerWidth = "100%";
 const DrawerHeader = styled('div')(({ theme }) => ({
@@ -35,10 +33,14 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   ...theme.mixins.toolbar,
   justifyContent: 'flex-end',
 }));
+
 const Header = (props) =>{
     const [setAnchorElNav] = React.useState(null);
-    const [setOpen] = React.useState(false);
-  
+    const [setOpen] = React.useState(false); 
+    const [selectedIndex, setSelectedIndex] = React.useState(1);
+
+   
+
     const handleCloseNavMenu = () => {
       setAnchorElNav(null);
     };
@@ -49,80 +51,71 @@ const Header = (props) =>{
   
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-
+  
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+  
 //contents inside the drawer
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
-            {<ClearIcon sx={{color: 'black'}}/>}
+            {<ClearIcon sx={{color: 'white'}}/>}
           </IconButton>
         </DrawerHeader>
         {/* Buttons on top half of divider */}
-        <ListItem sx={{ fontWeight: 'bold' }}>
-            <ListItemButton>
+      <List sx={{ fontWeight: 'bold' }}>
+        <ListItem>
               <ListItemIcon>
                 <img class="Icon"src={HomeIcon}/>
               </ListItemIcon>
-                <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={`/Home`} >Home</Link>
-            </ListItemButton>
+                <Link className="link" style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px",  color: "#DFF2FF", textAlign: "center", textDecorationColor:"black"}} to={`/Home`} >Home</Link>
         </ListItem>
-        <ListItem sx={{ fontWeight: 'bold' }}>
-            <ListItemButton>
+        <ListItem>
               <ListItemIcon>
                 <img class="Icon"src={AboutIcon}/>
               </ListItemIcon>
-                <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={'/About'}>About</Link>
-            </ListItemButton>
+                <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "#DFF2FF", textAlign: "center"}} to={'/About'}>About</Link>
+            
         </ListItem>
-        <ListItem sx={{ fontWeight: 'bold' }}>
-            <ListItemButton>
+        <ListItem>
               <ListItemIcon>
                 <img className='Icon' src={SponsorIcon}/>
               </ListItemIcon>
-              <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank">Sponsors</a>
-            </ListItemButton>
+              <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "#DFF2FF"}} to={`/Sponsors`}>Sponsors</Link>
         </ListItem>
-        <ListItem sx={{ fontWeight: 'bold' }}>
-            <ListItemButton>
+        <ListItem>
               <ListItemIcon>
                 <img class="Icon"src={FAQIcon}/>
               </ListItemIcon>
-                <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={'/FAQ'}>FAQ</Link>
-            </ListItemButton>
+                <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "#DFF2FF", textAlign: "center"}} to={'/FAQ'}>FAQ</Link>
+            
         </ListItem>
-      <Divider sx={{color:"black"}}/>
+        
+  <Divider sx={{ bgcolor: "#FFFFFF" }} />
 
       {/* Buttons on bottom half of divider */}
-      <List sx={{ fontWeight: 'bold' }}>
-          <ListItem >
-            <ListItemButton sx={{ textAlign: 'center' }}>
+      <ListItem>
+              <ListItemIcon>
+                <img className='Icon' src={ScheduleIcon}/>
+              </ListItemIcon>
+              <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "#DFF2FF"}} href="https://www.google.com/" target="_blank">Workshop</a>
+            
+        </ListItem>
+          <ListItem>
             <ListItemIcon>
                 <img class="Icon"src={TeamIcon}/>
               </ListItemIcon>
-            <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} to={`/Team`}>Our Team</Link>
-            </ListItemButton>
+                <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "#DFF2FF"}} to={`/Team`}>Our Team</Link>
           </ListItem>
-          <ListItem >
-            <ListItemButton sx={{ textAlign: 'center' }}>
+          <ListItem>
             <ListItemIcon>
                 <img class="Icon"src={SpotifyIcon}/>
               </ListItemIcon>
-            <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank">Spotify</a>
-            </ListItemButton>
+            <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "#DFF2FF"}} href="https://www.google.com/" target="_blank">Spotify</a>
           </ListItem>
-          <ListItem >
-            <ListItemButton sx={{ textAlign: 'center' }}>
-            <ListItemIcon>
-                <img class="Icon"src={ScheduleIcon}/>
-              </ListItemIcon>
-            <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank">Schedule</a>
-            </ListItemButton>
-          </ListItem>
-      </List>
+      </List> 
     </Box>
   );
 
@@ -206,11 +199,11 @@ const Header = (props) =>{
                 </Button>
                 <Button
                   onClick={handleCloseNavMenu}
-                  sx={{background: "#c7cbd1", fontSize: "16px", textDecoration: "none", marginLeft: "10px"}}
+                  sx={{background: "#2047DD", fontSize: "16px", textDecoration: "none", marginLeft: "10px"}}
                   variant="contained"
                   startIcon={<img class="Schedule"src={ScheduleIcon}/>}
                 >
-                    <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank">Join Now</a>
+                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "white"}} to={`/Apply`}>Join Now</Link>
                 </Button>
             </Box>
           </Toolbar>
@@ -229,7 +222,7 @@ const Header = (props) =>{
             }}
             sx={{
               display: { xs: 'block', md: 'none' },
-              '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+              '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth,  backgroundColor: "#04121C"},
 
             }}
           >
