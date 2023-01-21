@@ -67,7 +67,7 @@ const Header = (props) =>{
               <ListItemIcon>
                 <img alt='' class="Icon"src={HomeIcon}/>
               </ListItemIcon>
-                <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={`/Home`} >Home</Link>
+                <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={`/`} >Home</Link>
             </ListItemButton>
         </ListItem>
         <ListItem sx={{ fontWeight: 'bold' }}>
@@ -75,7 +75,7 @@ const Header = (props) =>{
               <ListItemIcon>
                 <img alt="" class="Icon"src={AboutIcon}/>
               </ListItemIcon>
-                <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={'/About'}>About</Link>
+                <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={'/About'}>About</Link>
             </ListItemButton>
         </ListItem>
         <ListItem sx={{ fontWeight: 'bold' }}>
@@ -83,7 +83,7 @@ const Header = (props) =>{
               <ListItemIcon>
                 <img alt="" className='Icon' src={SponsorIcon}/>
               </ListItemIcon>
-              <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Sponsors</a>
+              <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Sponsors</a>
             </ListItemButton>
         </ListItem>
         <ListItem sx={{ fontWeight: 'bold' }}>
@@ -91,7 +91,7 @@ const Header = (props) =>{
               <ListItemIcon>
                 <img alt="" class="Icon"src={FAQIcon}/>
               </ListItemIcon>
-                <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={'/FAQ'}>FAQ</Link>
+                <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={'/FAQ'}>FAQ</Link>
             </ListItemButton>
         </ListItem>
       <Divider sx={{color:"black"}}/>
@@ -103,7 +103,7 @@ const Header = (props) =>{
             <ListItemIcon>
                 <img alt="" class="Icon"src={TeamIcon}/>
               </ListItemIcon>
-            <Link style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} to={`/Team`}>Our Team</Link>
+            <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} to={`/Team`}>Our Team</Link>
             </ListItemButton>
           </ListItem>
           <ListItem >
@@ -111,7 +111,7 @@ const Header = (props) =>{
             <ListItemIcon>
                 <img alt="" class="Icon"src={SpotifyIcon}/>
               </ListItemIcon>
-            <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Spotify</a>
+            <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Spotify</a>
             </ListItemButton>
           </ListItem>
           <ListItem >
@@ -119,7 +119,7 @@ const Header = (props) =>{
             <ListItemIcon>
                 <img alt="" class="Icon"src={ScheduleIcon}/>
               </ListItemIcon>
-            <a style={{fontFamily: "Poppins",textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Schedule</a>
+            <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Schedule</a>
             </ListItemButton>
           </ListItem>
       </List>
@@ -163,7 +163,7 @@ const Header = (props) =>{
                   }}
                   variant="text"
                 >
-                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/Home`}>Home</Link>
+                    <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "black"}} to={`/`}>Home</Link>
                 </Button>
                 <Button
                   
@@ -174,7 +174,8 @@ const Header = (props) =>{
                     marginLeft: "10px"}}
                   variant="text"
                 >
-                    <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Workshop</a>
+                    {/* <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Workshop</a> */}
+                    <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "black"}} to={`/Workshop`}>Workshop</Link>
                 </Button>
 
                 <Button
@@ -188,7 +189,7 @@ const Header = (props) =>{
                     marginLeft: "10px"}}
                   variant="text"
                 >
-                    <Link style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} to={`/Team`}>Our Team</Link>
+                    <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','), textDecoration: "none", color: "black"}} to={`/Team`}>Our Team</Link>
                 </Button>
                 <Button
                   
@@ -202,17 +203,18 @@ const Header = (props) =>{
                     marginLeft: "10px"}}
                   variant="text"
                 >
-                    <a style={{fontFamily: "Poppins",textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Spotify</a>
+                    {/* <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Spotify</a> */}
+                    <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "black"}} to={`/Spotify`}>Spotify</Link>
                 </Button>
                 <Button
                   onClick={handleCloseNavMenu}
                   sx={{background: "(--primary-color)", fontSize: "16px", textDecoration: "none", marginLeft: "10px", color:"white"}}
                   variant="contained"
                   centered
-
                 >
                     
-                    <a style={{fontFamily: "Poppins",textDecoration: "none", color: "var(--primary-color)"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Join Now</a>
+                    {/* <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "var(--primary-color)"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Apply Now</a> */}
+                    <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "white"}} to={`/Apply`}>Apply Now</Link>
                 </Button>
             </Box>
           </Toolbar>

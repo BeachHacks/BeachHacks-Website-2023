@@ -1,10 +1,4 @@
-* {
-  font-family: 'Poppins', sans-serif !important;
-  font-weight: 600;
-}
-
 img {
-
   width: 65px;
   border-radius: 5px;
   overflow: hidden;
@@ -12,6 +6,7 @@ img {
   padding-left: 5px;
   aspect-ratio: 1/1;
 }
+
 .Icon{
   height: 40px;
   width: 40px;
@@ -34,17 +29,20 @@ img {
 }
 .MuiDrawer-root{
   margin-left: "auto";
-
 }
 
 .MuiButton-startIcon	{
   color: var(--primary-focus);
 }
- .MuiBox-root {
+.MuiBox-root {
   align-items: center !important;
+
 }
 .logoImg{
   margin: 0.1rem;
   aspect-ratio: 1/1;
   width: 3rem;
+}
+
+.MuiToolbar-root {
 }

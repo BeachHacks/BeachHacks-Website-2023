@@ -1,37 +1,25 @@
 import "./App.css";
-import React from "react";
-import Header from "./components/Header/Header";
-import Home from "./views/Home/Home";
-import About from "./views/About/About";
-import Sponsors from "./views/Sponsors/Sponsors";
-import FAQ from "./views/FAQ/FAQ";
 import { Route, Routes } from "react-router-dom";
-// import Footer from "./components/Footer/Footer";
+import Layout from "./pages/Layout";
+import Home from "./pages/Home/Home";
+import Workshop from "./pages/Workshop/Workshop";
+import Team from "./pages/Team/Team";
+import Spotify from "./pages/Spotify/Spotify";
+import Apply from "./pages/Apply/Apply";
+import NoPage from "./pages/NoPage/NoPage";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Routes>
-        <Route path="/Home" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Sponsors" element={<Sponsors />}/>
-        <Route path="/FAQ" element={<FAQ />} />
-        {/* <Route path="/Sponsors"component={() => {
-            window.location.href = "https://www.google.com/";
-            return null;
-          }}/> */}
-
-        {/* <Route
-          path="/Join"
-          component={() => {
-            window.location.href = "https://www.google.com/";
-            return null;
-          }}
-        /> */}
-      </Routes>
-      {/* <Footer /> */}
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path='workshop' element={<Workshop />} />
+        <Route path='team' element={<Team />} />
+        <Route path='spotify' element={<Spotify />} />
+        <Route path='apply' element={<Apply />} />
+        <Route path='*' element={<NoPage />} />
+      </Route>
+    </Routes>
   );
 }
 export default App;

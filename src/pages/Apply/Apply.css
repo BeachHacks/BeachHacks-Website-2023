@@ -1,0 +1,75 @@
+
+
+/* Container for the section handles the grid */
+.apply-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit , minmax(20rem, 57rem));
+    max-width: auto;
+}
+
+/* Apply Left Section */
+.apply-app-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: clamp(20rem, 50rem, 100%);
+    height: 100%;
+    padding: 0.25rem;
+}
+
+.apply-app-logo {
+    height: auto;
+    width: clamp(3rem, 1.5000rem + 6.6667vw, 6rem);
+    padding-right: 1rem;
+    filter: brightness(0);
+}
+
+.apply-app-title {
+    display: flex;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
+
+/* .apply-app-title h1 {
+    font-weight: 900 !important;
+    font-size: clamp(2.8rem, 1.7000rem + 4.8889vw, 5rem);
+}
+
+.apply-app-section h3 {
+    padding-bottom: 2rem;
+    font-size: clamp(1.5rem, 1.2500rem + 1.1111vw, 2rem);
+} */
+
+/* Box Applications Right Side */
+.apply-box {
+    background-color: #D9D9D9;
+    border-radius: 2rem;
+    padding: 3% 10% 2% 10%;
+    margin: 1.5rem;
+}
+
+.apply-box h1 {
+    font-size: clamp(1.5rem, 0.7500rem + 3.3333vw, 3rem);
+}
+
+.apply-box-title {
+    margin: 0 0;
+}
+
+/* .apply-box h3 {
+    font-size: clamp(0.75rem, 0.5000rem + 1.1111vw, 1.25rem);
+} */
+
+.apply-box-desc {
+    padding-bottom: 1rem;
+}
+
+.apply-box-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+

@@ -1,71 +1,61 @@
+/* you can do your css here */
 
-
-/* Container for the section handles the grid */
-.apply-container {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit , minmax(20rem, 57rem));
-    max-width: auto;
+.home-app-logo {
+    height: 5rem;
+    width: 25rem;
+    padding-left: 2rem;
 }
 
-/* Apply Left Section */
-.apply-app-section {
+.home-app-title {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 40rem;
+}
+
+.home-app-title button {
+    padding-right: 2rem;
+}
+
+.home-app-section h2 {
+    padding-bottom: 0rem;
+    padding-right: 3rem;
+}
+
+.home-app-section h3 {
+    padding-bottom: 0rem;
+    padding-right: 6rem;
+    font-size: 2rem;
+}
+
+.home-app-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: clamp(20rem, 50rem, 100%);
-    height: 100%;
-    padding: 0.25rem;
+    width: 23rem;
+    height: 60rem;
 }
 
-.apply-app-logo {
-    height: auto;
-    width: clamp(3rem, 1.5000rem + 6.6667vw, 6rem);
-    padding-right: 1rem;
-    filter: brightness(0);
+.home-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 50rem));
+    max-width: 100%;
 }
 
-.apply-app-title {
-    display: flex;
-    word-wrap: break-word;
-    text-overflow: ellipsis;
+.home-box-section {
+    border-radius: 13px;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    padding-right: none;
+    margin: 5rem;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    overflow: hidden;
 }
 
-/* .apply-app-title h1 {
-    font-weight: 900 !important;
-    font-size: clamp(2.8rem, 1.7000rem + 4.8889vw, 5rem);
-}
-
-.apply-app-section h3 {
-    padding-bottom: 2rem;
-    font-size: clamp(1.5rem, 1.2500rem + 1.1111vw, 2rem);
-} */
-
-/* Box Applications Right Side */
-.apply-box {
-    background-color: #D9D9D9;
-    border-radius: 2rem;
-    padding: 3% 10% 2% 10%;
-    margin: 1.5rem;
-}
-
-.apply-box h1 {
-    font-size: clamp(1.5rem, 0.7500rem + 3.3333vw, 3rem);
-}
-
-/* .apply-box h3 {
-    font-size: clamp(0.75rem, 0.5000rem + 1.1111vw, 1.25rem);
-} */
-
-.apply-box-desc {
-    padding-bottom: 1rem;
-}
-
-.apply-box-btn {
-    display: flex;
+.home-box {
+    padding: 30% 10% 30% 10%;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
+    display: flex;
 }
-

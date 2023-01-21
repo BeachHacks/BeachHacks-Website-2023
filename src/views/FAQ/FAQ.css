@@ -10,11 +10,11 @@
 
 .header h1 {
     display: flex;
-    font-size: clamp(1.5rem, 0.5360rem + 4.2965vw, 4rem);
+    /* font-size: clamp(1.5rem, 0.5360rem + 4.2965vw, 4rem);
     font-weight: 500;
     margin: 0px 0px clamp(1.875rem, 2.2538rem + -2.0202vw, 0.625rem) 0px;
     border: 0px;
-    font-family: 'Poppins';
+    font-family: 'Poppins'; */
 }
 
 .question-container {
@@ -45,13 +45,13 @@
     align-items: center;
 }
 
-.question h4 {
+.question h2 {
     margin: 10px;
     font-size: clamp(1rem, 0.8622rem + 0.7874vw, 1.5rem);
     overflow-wrap: normal;
 }
 
-.question p {
+.question h3 {
     margin: 0px;
     padding: 10px;
     font-size: clamp(1rem, 0.9260rem + 0.4000vw, 1.25rem);
@@ -59,8 +59,6 @@
 }
 
 .chevron::before {
-    margin-right: 20px;
-    margin-top: 3px;
 	border-style: solid;
 	border-width: 0.15em 0.15em 0 0;
 	content: '';
@@ -72,6 +70,8 @@
 	transform: rotate(-45deg);
 	vertical-align: top;
 	width: 0.45em;
+    margin-right: 20px;
+    margin-top: 3px;
 }
 
 .chevron.bottom:before {
@@ -80,6 +80,6 @@
 }
 
 .chevron.top:before {
-	top: 0;
-
+	top: 23px;
+    left: 65px;
 }

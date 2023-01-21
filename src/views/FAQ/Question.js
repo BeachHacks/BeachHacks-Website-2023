@@ -4,15 +4,15 @@ const Question = ({question, onToggle}) => {
   return (
     <div className='question' onClick={() => onToggle(question.id)}>
       <div className='quesiton-box'>
-        <h4>
+        <h2>
             {question.Q} 
-        </h4>
+        </h2>
         <span className={`chevron ${question.expand ? 'top' : 'bottom'}`}></span>
       </div>
         {question.expand ? (
-        <p>
+        <h3>
             {question.P}
-        </p>
+        </h3>
         ) : ( '' )}
       
     </div>
