@@ -5,18 +5,20 @@ import { Link } from "react-router-dom";
 const Apply = () => {
     return (
         <section className="home-container" id="home">
-            <div className="home-app-section">
-                <div className="home-app-title">
-                    <h1>BeachHacks</h1>   
+            <div className="home-section-left">
+                <div className="home-title">
+                    <img src={bh_logo} alt="BeachHacks" className="home-section-logo"/>
+                    <h1>BeachHacks</h1>
                 </div>
-                <h3>Date, 2023</h3>
-                <h2>Get Involved</h2>
-                <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "black"}} to={`/Apply`}><button>Apply Now</button></Link>
+                <Link to="/apply">
+                    <button className="home-btn">Apply Now</button>
+                </Link>
                 
             </div>
-            
-            <div className="container home-box-section">
-                <img className="home-box-img" src="https://i.imgur.com/cdVc6cI.jpg"></img>
+            <div className="home-section-right">
+                <div className="container home-box">
+                    <img src="https://i.imgur.com/cdVc6cI.jpg"></img>
+                </div>
             </div>
         </section>
     )

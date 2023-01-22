@@ -1,62 +1,42 @@
-you can do your css here
-
-.home-app-logo {
-    height: 5rem;
-    width: 25rem;
-    padding-left: 2rem;
-}
-
-.home-app-title {
-    display: flex;
-    /* font-size: 1rem;
-    font-weight: 40rem; */
-}
-
-/* .home-app-title button {
-    padding-right: 2rem;
-} */
-
-/* .home-app-section h2 {
-    padding-bottom: 0rem;
-    padding-right: 3rem;
-}
-
-.home-app-section h3 {
-    padding-bottom: 0rem;
-    padding-right: 6rem;
-    font-size: 2rem;
-} */
-
-.home-app-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 23rem;
-    height: 60rem;
-}
-
 .home-container {
+    margin-top: 5em;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 50rem));
-    max-width: 100%;
+    grid-template-columns: repeat(auto-fit , minmax(20rem, 57rem));
+    place-items: center;
 }
 
-.home-box-section {
-    width: 10em;
-    height: 20em;
+.home-section-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-title {
+    display: flex;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    align-items: center;
+}
+
+.home-section-logo {
+    height: 3.5em;
+    margin-right: 1em;
+}
+
+.home-btn {
+    width: 8em;
+    padding: 0.5em 0;
 }
 
 .home-box {
-    padding: 30% 10% 30% 10%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    height: 40em;
+    width: 40em;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-.home-box-img {
+.home-box img {
     height: 100%;
-    width: auto;
     object-fit: cover;
 }

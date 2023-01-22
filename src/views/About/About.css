@@ -20,6 +20,7 @@ h3 {
 } */
 
 .about-container {
+    margin-top: 15em;
     display: grid;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
