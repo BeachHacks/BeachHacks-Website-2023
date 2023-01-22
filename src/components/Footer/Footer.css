@@ -1,48 +1,33 @@
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
 footer {
-    
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    height: 12%;
     text-align: center;
+    bottom: 0;
     background-color: var(--neutral-focus);
     font-family:'Trebuchet MS';
     color: black;
-
 }
 
-.social{
-
+.social {
     text-align:center;
-    padding-top: 25px;
-    font-size: 25px;
-
+    padding-top: 1em;
 }
 
 .social a {
-
-    font-size: 25px;
-    color: inherit;
-    display: inline-block;
+    font-size: 3rem;
+    color: var(--primary-focus);
     text-align: center;
-    width: 30px;
-    height: 30px;
-
-
-
 }
 
 .social a:hover{
-
     opacity: 0.7;
-
 }
 
+.footer-bottom {
+    padding-bottom: 0.5em;
+}
 
-/*rgb(217, 217, 217);*/
+.footer-divider {
+    width: 80%;
+    border: 2px solid var(--primary-focus);
+    border-radius: 5px;
+}

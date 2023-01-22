@@ -1,4 +1,4 @@
-/* you can do your css here */
+you can do your css here
 
 .home-app-logo {
     height: 5rem;
@@ -8,15 +8,15 @@
 
 .home-app-title {
     display: flex;
-    font-size: 1rem;
-    font-weight: 40rem;
+    /* font-size: 1rem;
+    font-weight: 40rem; */
 }
 
-.home-app-title button {
+/* .home-app-title button {
     padding-right: 2rem;
-}
+} */
 
-.home-app-section h2 {
+/* .home-app-section h2 {
     padding-bottom: 0rem;
     padding-right: 3rem;
 }
@@ -25,7 +25,7 @@
     padding-bottom: 0rem;
     padding-right: 6rem;
     font-size: 2rem;
-}
+} */
 
 .home-app-section {
     display: flex;
@@ -44,13 +44,8 @@
 }
 
 .home-box-section {
-    border-radius: 13px;
-    padding-top: 10rem;
-    padding-bottom: 5rem;
-    padding-right: none;
-    margin: 5rem;
-    grid-template-columns: repeat(auto-fit, 20rem);
-    overflow: hidden;
+    width: 10em;
+    height: 20em;
 }
 
 .home-box {
@@ -58,4 +53,10 @@
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+.home-box-img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
 }

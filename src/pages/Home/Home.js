@@ -10,8 +10,7 @@ const Home = () => {
     return (
         <div className="home">
             <SideNavBar />
-            {/* // TODO: Home Page and Apply page? ask Lydia */}
-            <Apply />
+            {/* <Apply /> */}
             <About />
             <Sponsors />
             <FAQ />

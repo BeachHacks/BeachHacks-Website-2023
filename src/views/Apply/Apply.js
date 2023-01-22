@@ -16,9 +16,7 @@ const Apply = () => {
             </div>
             
             <div className="container home-box-section">
-                <div className="home-box">
-                    <h2>3D ISOMETRIC ART?</h2>
-                </div>
+                <img className="home-box-img" src="https://i.imgur.com/cdVc6cI.jpg"></img>
             </div>
         </section>
     )

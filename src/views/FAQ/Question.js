@@ -7,14 +7,17 @@ const Question = ({question, onToggle}) => {
         <h2>
             {question.Q} 
         </h2>
-        <span className={`chevron ${question.expand ? 'top' : 'bottom'}`}></span>
+        <i class={question.expand ? "fa-solid fa-chevron-down" : "fa-solid fa-chevron-up"}></i>
+        {/* <span className={`chevron ${question.expand ? 'top' : 'bottom'}`}></span> */}
       </div>
         {question.expand ? (
-        <h3>
+        <div className="answer-box">
+          <h3>
             {question.P}
-        </h3>
+          </h3>
+        </div>
+        
         ) : ( '' )}
-      
     </div>
   )
 }

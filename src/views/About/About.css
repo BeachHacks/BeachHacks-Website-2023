@@ -32,12 +32,19 @@ h3 {
     display: flex;
     color: #666666;
     background-color: #D9D9D9;
-    width: clamp(20rem, 90%, 100%);
-    height: 25em;
+    width: clamp(15em, 85%, 100%);
+    height: 20em;
     border-radius: 20px;
-    margin: 20px;
+
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    margin: 4em 0 0 2em;
+}
+
+.about-photo img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .about-text-box {

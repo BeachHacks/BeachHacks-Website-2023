@@ -78,7 +78,7 @@
 }
 
 @media (max-width: 600px) {
-    h1 {
+    /* h1 {
         font-size: 1.5em;
         font-weight: 500;
         margin: 0;
@@ -101,7 +101,7 @@
         font-weight: 500;
         margin: 0.5em 0 0 0;
         padding: 0;
-    }
+    } */
     
     .team-container {
         display: grid;

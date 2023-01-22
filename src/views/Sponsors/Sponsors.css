@@ -55,22 +55,41 @@
     aspect-ratio: 1/1;
     border-radius: 25px;
     background-color: #d9d9d9;
+    overflow: hidden;
+}
+
+.big-sponsor img {
+    width: 100%; 
+    object-fit: cover;
 }
 
 .medium-sponsor {
+    display: flex;
     width: 14rem;
     height: 14rem;
     background-color: #d9d9d9;
     border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.medium-sponsor img {
+    width: 100%;
+    object-fit: cover;
+}
+.small-sponsor img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .small-sponsor {
-    display: inline-grid;
+    display: flex;
     height: 10rem;
     width: 10rem;
     background-color: #d9d9d9;
     aspect-ratio: 1/1;
     border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .sponsor-btn {
