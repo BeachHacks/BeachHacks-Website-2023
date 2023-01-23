@@ -29,6 +29,7 @@ h1 {
     font-size: clamp(2rem, 1.0000rem + 4.4444vw, 4rem);
     font-family: "Poppins", sans-serif;
     font-weight: 800;
+    margin: 0 !important;
     padding: 0;
     color: var(--primary-focus);
 }
@@ -37,7 +38,7 @@ h2 {
     font-size: 2.2rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    margin: 0;
+    margin: 0 !important;
     padding: 0;
     color: var(--primary-focus);
 }
@@ -46,7 +47,7 @@ h3 {
     font-size: 1.5em;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    margin: 0.5em 0 0 0;
+    margin: 0 !important;
     padding: 0;
     color: var(--primary-focus);
 }
@@ -66,6 +67,7 @@ button {
     text-decoration: none;
     text-overflow: ellipsis;
     cursor: pointer;
+    transition: ease 0.3s;
 }
 
 button:hover {

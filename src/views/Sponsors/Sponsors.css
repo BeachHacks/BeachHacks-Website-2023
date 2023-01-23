@@ -1,12 +1,20 @@
-
-
-
+.sponsor-view {
+    margin-top: 15em;
+}
 .title {
     display: flex;
     justify-content: center;
     margin: 4rem 0 4rem;
     line-height: 3rem;
 }
+.left{
+    align-self: center;
+}
+
+.medium-sponsor img {
+    padding: .5rem;
+}
+
 
 .sponsor {
     display: grid;
@@ -18,6 +26,7 @@
 }
 
 .top {
+    margin-top: 3em;
     display: grid;
     /* grid-template-columns: 18.75rem 18.75rem 18.75rem; */
     grid-template-columns: repeat(auto-fit, minmax(14rem, 14rem));
@@ -46,6 +55,7 @@
     height: 700px; */
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .big-sponsor {
@@ -56,6 +66,7 @@
     border-radius: 25px;
     background-color: #d9d9d9;
     overflow: hidden;
+    margin-bottom: 2rem;
 }
 
 .big-sponsor img {
@@ -71,7 +82,12 @@
     border-radius: 1rem;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    
 }
+
+
+
 .medium-sponsor img {
     width: 100%;
     object-fit: cover;
@@ -110,11 +126,14 @@ a {
     .medium-sponsor {
         width: 10rem;
         height: 10rem;
+        
     }
 
     .top {
+        margin-top: 3em;
         justify-items: center;
-        grid-gap: 0;
+        grid-gap: 2rem;
+        justify-content: center;
     }
 
     .small-sponsor {
@@ -127,39 +146,47 @@ a {
 }
 
 @media screen and (max-width: 688px) {
+
+    .sponsor-view {
+        margin-top: 0em;
+    }
     .top {
+        margin-top: 2em;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 10rem));
-        grid-gap: 1.063rem 1.375rem;
+        grid-template-columns: repeat(auto-fit, minmax(4rem, 10rem));
+        grid-gap: .5rem .5rem;
         justify-content: center;
         align-items: center;
     }
 }
 
 @media screen and (max-width: 527px) {
+
+    
     .top {
+        margin-top: 2em;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(4.813rem, 4.813rem));
-        grid-gap: 1.063rem 1.375rem;
+        grid-template-columns: repeat(auto-fit, minmax(4rem, 6rem));
+        grid-gap: 0.5rem 0.5rem;
         justify-content: center;
         align-items: center;
     }
 
-    .title {
+    /* .title {
         font-size: 24px;
-    }
+    } */
 
     .bottom {
         display: grid;
-        grid-template-columns: repeat(3, minmax(4.813rem, 4.813rem));
+        grid-template-columns: repeat(3, minmax(4rem, 4.813rem));
         grid-gap: 1.063rem 1.375rem;
         justify-content: center;
         align-items: center;
     }
 
     .medium-sponsor {
-        width: 4.813rem;
-        height: 4.813rem;
+        width: 5.813rem;
+        height: 5.813rem;
     }
 
     .small-sponsor {

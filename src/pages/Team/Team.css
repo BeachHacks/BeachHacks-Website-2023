@@ -1,4 +1,4 @@
-.team-container h1 {
+/* .team-container h1 {
     font-size: 2em;
     font-weight: 500;
 }
@@ -11,7 +11,7 @@
 .team-container h3 {
     font-size: 1em;
     font-weight: 500;
-}
+} */
 
 .team-container {
     display: grid;
@@ -20,19 +20,20 @@
     font-style: normal;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 95rem));
     max-width: 100%;
-    margin-left: 150px;
+    margin-left: 10em;
 }
 
 .team-circles {
-    margin: 40px;
-    margin-top: 10px;
+    /* margin: 40px;
+    margin-top: 10px; */
+    margin: 3em 0 3em 3em;
     display: grid;
     grid-gap: 50px;
     justify-content: left;
-    grid-template-columns: repeat(auto-fit, 9rem);
+    grid-template-columns: repeat(auto-fit, 10rem);
 }
 .circle-space {
-    margin: 20px 50px 20px 50px;
+    /* margin: 20px 50px 20px 50px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,92 +41,66 @@
 
 .circle {
     background-color: #D9D9D9;
-    height: 100px;
-    width: 100px;
+    height: 8em;
+    width: 8em;
     display: flex;
     margin-bottom: 20px;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    image-rendering: auto;
 }
 
 .circle-name {
-    margin: -20px;
-    margin-top: 110px;
+    /* margin: -20px;
+    margin-top: 110px; */
     padding: 0;
 }
 
 .circle-position {
     color: #666666;
-    margin: -83px;
+    text-align: center;
+    /* margin: -83px;
     margin-top: 45px;
-    padding-top: 50px;
+    padding-top: 50px; */
 
 }
 
 .team-category {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    /* padding-top: 100px; */
 }
 
 .sub-team-category {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    margin-left: 50px;
-    margin-top: 20px;
-    /* padding-top: 100px; */
 }
 
 @media (max-width: 600px) {
-    /* h1 {
-        font-size: 1.5em;
-        font-weight: 500;
-        margin: 0;
-        margin-top: 1px;
-        margin-left: 20px;
-        margin-right: 10px;
-        padding: 0;
-    
-    }
-    
-    h2 {
-        font-size: .9em;
-        font-weight: 500;
-        margin: 0;
-        padding: 0;
-    }
-    
-    h3 {
-        font-size: .6em;
-        font-weight: 500;
-        margin: 0.5em 0 0 0;
-        padding: 0;
-    } */
     
     .team-container {
         display: grid;
         justify-content: left;
-        font-family: 'Poppins', sans-serif;
-        margin: 10px;
-        margin-right: -20px;
-        font-style: normal;
+        margin: 1em;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 95rem));
         max-width: 100%;
     }
     
     .team-circles {
-        margin: 15px;
-        margin-top: 10px;
-        margin-left: 30x;
         display: grid; 
-        grid-gap: 55px;
-        row-gap: 0px;
+        grid-gap: 6em;
+        row-gap: 4em;
         justify-content: left;
         grid-template-columns: repeat(auto-fit, 4rem);
     }
     .circle-space {
-        margin: 20px 50px 20px 50px;
         display: flex;
         flex-direction: column;
         align-items: left;
@@ -136,50 +111,28 @@
         height: 80px;
         width: 80px;
         display: flex;
-        margin-bottom: 5px;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
     }
 
     .circle-name {
-        margin: -30px;
-        /* margin-top: 80px;
-        margin-right: 0px; */
-        padding-top: 110px;
-        padding-right: 30px;
-        margin-left: 6px;
-        /* padding: 0; */
+        font-size: 1.5rem;
     }
     
     .circle-position {
         color: #666666;
-        margin: -68px;
-        /* margin-top: 20px; */
-        /* padding-top: 60px; */
-        /* margin-right: -54px; */
-        padding-right: 40px;
-        padding-top: 140px;
-
+        font-size: 1rem
     }
     
     .team-category {
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        margin-left: -10px;
-        margin-top: 20px;
-        margin-bottom: -15px;
-        /* padding-top: 100px; */
+        width: ;
+        word-wrap: break-word;
     }
     
     .sub-team-category {
         font-family: 'Poppins', sans-serif;
         font-style: normal;
-        margin-left: 30px;
-        margin-top: 30px;
-        margin-bottom: -15px;
-
-        /* padding-top: 100px; */
     }
 }
 

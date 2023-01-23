@@ -24,6 +24,10 @@ import ListItemButton from '@mui/material/ListItemButton';
 import { styled } from '@mui/material/styles';
 import { ListItemIcon} from '@mui/material';
 import ClearIcon from '@mui/icons-material/Clear';
+import { useEffect, useHistory } from 'react';
+
+
+
 
 
 const drawerWidth = "100%";
@@ -35,7 +39,8 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   ...theme.mixins.toolbar,
   justifyContent: 'flex-end',
 }));
-const Header = (props) =>{
+
+const Header = (props) => {
     const [setAnchorElNav] = React.useState(null);
     const [setOpen] = React.useState(false);
   
@@ -51,14 +56,15 @@ const Header = (props) =>{
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
+    setMobileOpen(!mobileOpen);
   };
 //contents inside the drawer
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
+          <IconButton onClick={handleDrawerToggle}>
             {<ClearIcon sx={{color: 'black'}}/>}
+
           </IconButton>
         </DrawerHeader>
         {/* Buttons on top half of divider */}
@@ -67,7 +73,7 @@ const Header = (props) =>{
               <ListItemIcon>
                 <img alt='' class="Icon"src={HomeIcon}/>
               </ListItemIcon>
-                <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={`/`} >Home</Link>
+                <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={`/`} href="#" >Home</Link>
             </ListItemButton>
         </ListItem>
         <ListItem sx={{ fontWeight: 'bold' }}>
@@ -75,7 +81,7 @@ const Header = (props) =>{
               <ListItemIcon>
                 <img alt="" class="Icon"src={AboutIcon}/>
               </ListItemIcon>
-                <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={'/About'}>About</Link>
+                <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to='/' href='#about' >About</a>
             </ListItemButton>
         </ListItem>
         <ListItem sx={{ fontWeight: 'bold' }}>
@@ -83,7 +89,7 @@ const Header = (props) =>{
               <ListItemIcon>
                 <img alt="" className='Icon' src={SponsorIcon}/>
               </ListItemIcon>
-              <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Sponsors</a>
+              <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} href="#sponsors" rel="noreferrer">Sponsors</a>
             </ListItemButton>
         </ListItem>
         <ListItem sx={{ fontWeight: 'bold' }}>
@@ -91,7 +97,7 @@ const Header = (props) =>{
               <ListItemIcon>
                 <img alt="" class="Icon"src={FAQIcon}/>
               </ListItemIcon>
-                <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={'/FAQ'}>FAQ</Link>
+                <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={'/'} href="#faq">FAQ</a>
             </ListItemButton>
         </ListItem>
       <Divider sx={{color:"black"}}/>
@@ -103,7 +109,7 @@ const Header = (props) =>{
             <ListItemIcon>
                 <img alt="" class="Icon"src={TeamIcon}/>
               </ListItemIcon>
-            <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} to={`/Team`}>Our Team</Link>
+            <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} to={`/Team`} rel="noopener">Our Team</Link>
             </ListItemButton>
           </ListItem>
           <ListItem >
@@ -155,7 +161,7 @@ const Header = (props) =>{
                 display: { xs: 'none', md: 'flex' }
                 }}>
               <Button
-                  onClick={handleCloseNavMenu}
+                  //onClick={handleCloseNavMenu}
                   sx={{
                     fontSize: "18px",
                     color: "#000000",
@@ -167,7 +173,7 @@ const Header = (props) =>{
                 </Button>
                 <Button
                   
-                  onClick={handleCloseNavMenu}
+                  //onClick={handleCloseNavMenu}
                   sx={{
                     fontSize: "18px",
                     color: "#000000",
@@ -179,7 +185,7 @@ const Header = (props) =>{
                 </Button>
 
                 <Button
-                  onClick={handleCloseNavMenu}
+                  //onClick={handleCloseNavMenu}
                   sx={{
                     "&.active":{
                         textDecoration: "underline"
@@ -193,7 +199,7 @@ const Header = (props) =>{
                 </Button>
                 <Button
                   
-                  onClick={handleCloseNavMenu}
+                  //onClick={handleCloseNavMenu}
                   sx={{
                     "&.active":{
                         textDecoration: "underline"
@@ -207,7 +213,7 @@ const Header = (props) =>{
                     <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "black"}} to={`/Spotify`}>Spotify</Link>
                 </Button>
                 <Button
-                  onClick={handleCloseNavMenu}
+                  //onClick={handleCloseNavMenu}
                   sx={{background: "(--primary-color)", fontSize: "16px", textDecoration: "none", marginLeft: "10px", color:"white"}}
                   variant="contained"
                   centered

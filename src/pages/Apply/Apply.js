@@ -10,28 +10,34 @@ const Apply = () => {
                     <h1>BeachHacks</h1>
                 </div>
                 <h3>Want to participate?</h3>
-                <button>Apply Now!</button>
+                {/* <button>Apply Now!</button> */}
             </div>
             <div className="apply-sposor-section">
                 <div className="container apply-box">
-                    <h1 className="apply-box-title">Looking to be a Judge?</h1>
-                    <h3 className="apply-box-desc">BeachHacks is looking for judges to help us evaluate projects and provide feedback to students. If you are interested in judging, please fill out the form below.</h3>
+                    <h1 className="apply-box-title">Looking to Compete?</h1>
+                    <h3 className="apply-box-desc">Code for 24 hours and join workshops to network with people! Swags, music, and food are provided! If you are interested, please fill out the form.</h3>
                     <div className="apply-box-btn">
-                        <button className="apply-button">APPLY TO JUDGE</button>
+                        <a href="https://bit.ly/bh7attendee">
+                            <button className="apply-button" >APPLY TO COMPETE</button>
+                        </a>
                     </div>
                 </div>
                 <div className="container apply-box">
                     <h1 className="apply-box-title">Looking to be a Mentor?</h1>
                     <h3 className="apply-box-desc">BeachHacks is looking for mentors to help students with their projects. If you are interested in mentoring, please fill out the form below.</h3>
                     <div className="apply-box-btn">
-                        <button className="apply-button">APPLY TO MENTOR</button>
+                        <a href="https://bit.ly/bh7mentor">
+                            <button className="apply-button">APPLY TO MENTOR</button>
+                        </a>
                     </div>
                 </div>
                 <div className="container apply-box">
-                    <h1 className="apply-box-title">Looking to be a Sponsor?</h1>
-                    <h3 className="apply-box-desc">BeachHacks is looking for sponsors to help us provide swag, food, and prizes for our event. If you are interested in sponsoring, please fill out the form below.</h3>
+                    <h1 className="apply-box-title">Looking to be a Judge?</h1>
+                    <h3 className="apply-box-desc">BeachHacks is looking for judges to help us evaluate projects and provide feedback to students. If you are interested in judging, please fill out the form below.</h3>
                     <div className="apply-box-btn">
-                        <button className="apply-button ">APPLY TO SPONSOR</button>
+                        <a href="https://drive.google.com/file/d/1l3p-3Cju9sHnrNiguq4Uylv80qgGqvFM/view">
+                            <button className="apply-button ">APPLY TO JUDGE</button>
+                        </a>
                     </div>
                 </div>
             </div>

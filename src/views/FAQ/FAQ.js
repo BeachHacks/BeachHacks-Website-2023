@@ -74,17 +74,7 @@ const FAQ = () => {
       id: 6,
       expand: false,
     },
-    {
-      Q: "What are the rules for participating in BeachHacks?",
-      P: (
-        <>
-          link to rules
-          <br />
-        </>
-      ),
-      id: 7,
-      expand: false,
-    },
+    
     {
       Q: "What should I bring to BeachHacks?",
       P: (

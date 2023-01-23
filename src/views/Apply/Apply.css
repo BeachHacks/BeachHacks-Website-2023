@@ -2,14 +2,16 @@
     margin-top: 5em;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit , minmax(20rem, 57rem));
-    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 57rem));
+    align-items: center;
+    width: 100%;
 }
 
 .home-section-left {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5em 0;
 }
 
 .home-title {
@@ -27,16 +29,39 @@
 .home-btn {
     width: 8em;
     padding: 0.5em 0;
+
+    margin-top: 0.5em;
+}
+
+.home-section-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .home-box {
-    height: 40em;
-    width: 40em;
+    display: flex;
+    color: #666666;
+    background-color: #D9D9D9;
+    width: clamp(20rem, 5.0000rem + 66.6667vw, 50rem);
+    height: 50em;
     border-radius: 20px;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
 }
 
 .home-box img {
     height: 100%;
     object-fit: cover;
+}
+.apply-button {
+    width: 25em;
+}
+
+@media screen and (max-width: 800px) {
+    .home-container {
+        margin-top: 0;
+    }
 }

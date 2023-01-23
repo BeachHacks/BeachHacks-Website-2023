@@ -1,7 +1,9 @@
+import "./Workshop.css"
+
 const Workshop = () => {
     return (
-        <div>
-            <h1>Workshop</h1>
+        <div className="workshop-container">
+            <h1>Workshop!</h1>
         </div>
     )
 }

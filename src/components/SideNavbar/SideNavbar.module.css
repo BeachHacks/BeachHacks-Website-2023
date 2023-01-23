@@ -59,7 +59,7 @@
     padding-bottom: 6px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 912px) {
     .sidenav {
         display: none;
     }

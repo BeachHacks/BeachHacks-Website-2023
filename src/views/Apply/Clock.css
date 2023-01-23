@@ -1,0 +1,25 @@
+.nums {
+    padding: 20px 50px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.time-cont {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.time {
+    margin: 0.5em 1em;
+}
+
+@media screen and (max-width: 800px) {
+    .time-cont {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

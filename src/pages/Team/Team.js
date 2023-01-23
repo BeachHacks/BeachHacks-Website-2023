@@ -17,7 +17,7 @@ const Team = () => {
           <div className="team-circles">
               {data.map((info) => {
                 if (info.id == 1){
-                  return <Profile key={info.id} {...info}/>
+                  return <Profile key={info.id} {...info} />
                 }
                   })}
           </div>
@@ -89,7 +89,7 @@ const Team = () => {
           </div>
           <div className="team-circles">
               {data.map((info) => {
-                if (info.id <= 26 & info.id > 23){
+                if (info.id <= 27 & info.id > 23){
                   return <Profile key={info.id} {...info}/>
                 }
                   })}
@@ -102,7 +102,7 @@ const Team = () => {
           </div>
           <div className="team-circles">
               {data.map((info) => {
-                if (info.id <= 43 & info.id > 26){
+                if (info.id <= 43 & info.id > 27){
                   return <Profile key={info.id} {...info}/>
                 }
                   })}

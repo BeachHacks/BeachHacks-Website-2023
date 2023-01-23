@@ -1,6 +1,8 @@
+import "./Spotify.css"
+
 const Spotify = () => {
     return (
-        <div>
+        <div className="spotify-container">
             <h1>Spotify</h1>
         </div>
     )

@@ -36,7 +36,6 @@ h3 {
     width: clamp(15em, 85%, 100%);
     height: 20em;
     border-radius: 20px;
-
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -88,4 +87,10 @@ h3 {
 .mini-box-number, .mini-box-text {
     margin: -5px;
     padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .about-container {
+        margin-top: 0;
+    }
 }

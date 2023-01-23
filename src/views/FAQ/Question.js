@@ -7,7 +7,7 @@ const Question = ({question, onToggle}) => {
         <h2>
             {question.Q} 
         </h2>
-        <i class={question.expand ? "fa-solid fa-chevron-down" : "fa-solid fa-chevron-up"}></i>
+        <i class={question.expand ? "fa-solid fa-chevron-up" : "fa-solid fa-chevron-down"}></i>
         {/* <span className={`chevron ${question.expand ? 'top' : 'bottom'}`}></span> */}
       </div>
         {question.expand ? (
