@@ -1,8 +1,8 @@
 // create react component
 import React from "react";
 import "./Sponsors.css";
-import GoogleCloudIcon from "../../assets/google_cloud.svg";
-import CodeAndCoffee from "../../assets/code_and_coffee.svg";
+// import GoogleCloudIcon from "../../assets/google_cloud.svg";
+// import CodeAndCoffee from "../../assets/code_and_coffee.svg";
 
 const Sponsors = () => {
   return (
@@ -19,12 +19,12 @@ const Sponsors = () => {
             </div>
             <div className="container medium-sponsor">
               <a href="https://cloud.google.com/">
-                <img src={GoogleCloudIcon} alt="Google Goes Here"/>
+                <img src="https://i.imgur.com/3ONwKQr.png" alt="Google Goes Here"/>
               </a>
             </div>
             <div className="container medium-sponsor">
               <a href="https://www.codeandcoffee.dev/">
-                <img src={CodeAndCoffee} alt="CodeAndCoffee Goes Here"/>
+                <img src="https://i.imgur.com/Kic5Dzq.png" alt="CodeAndCoffee Goes Here"/>
               </a>
             </div>
             <div className="container medium-sponsor">
