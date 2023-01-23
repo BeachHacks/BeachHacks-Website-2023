@@ -117,7 +117,8 @@ const Header = (props) => {
             <ListItemIcon>
                 <img alt="" class="Icon"src={SpotifyIcon}/>
               </ListItemIcon>
-            <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Spotify</a>
+            {/* <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Spotify</a> */}
+            <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "black"}} to={`/Spotify`}>Spotify</Link>
             </ListItemButton>
           </ListItem>
           <ListItem >
@@ -125,7 +126,8 @@ const Header = (props) => {
             <ListItemIcon>
                 <img alt="" class="Icon"src={ScheduleIcon}/>
               </ListItemIcon>
-            <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Schedule</a>
+            {/* <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Schedule</a> */}
+            <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "black"}} to={`/Workshop`}>Schedule</Link>
             </ListItemButton>
           </ListItem>
       </List>
@@ -181,7 +183,7 @@ const Header = (props) => {
                   variant="text"
                 >
                     {/* <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Workshop</a> */}
-                    <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "black"}} to={`/Workshop`}>Workshop</Link>
+                    <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "black"}} to={`/Workshop`}>Schedule</Link>
                 </Button>
 
                 <Button

@@ -1,6 +1,10 @@
+import "./NoPage.css"
+
 const NoPage = () => {
     return (
-        <h1>Error 404 Page Not Found</h1>
+        <div className="page-cont">
+            <h1>Error 404: Page Not Found</h1>
+        </div>
     );
 }
 export default NoPage;
