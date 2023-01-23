@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.ea9a977e.css",
-    "main.js": "/static/js/main.d0737e40.js",
+    "main.css": "/static/css/main.eeb55132.css",
+    "main.js": "/static/js/main.e14ce832.js",
     "static/media/bhLogoBrick.png": "/static/media/bhLogoBrick.714be27428b61a73dbdc.png",
-    "static/media/fluent_people-team-20-regular.svg": "/static/media/fluent_people-team-20-regular.fb116a8cd78f6080d42927fe2d7d709e.svg",
-    "static/media/ph_spotify-logo-light.svg": "/static/media/ph_spotify-logo-light.756673e1e649f6e06bda03a70004d09d.svg",
-    "static/media/bh_logo.svg": "/static/media/bh_logo.a9941ef46c03084c7b117fc5e84d5c2a.svg",
-    "static/media/globe.svg": "/static/media/globe.be09c0962c3e428dc0d8aa4b5230c6f5.svg",
-    "static/media/clock.svg": "/static/media/clock.fb3b1d01c57465509a937570b156435f.svg",
+    "static/media/fluent_people-team-20-regular.svg": "/static/media/fluent_people-team-20-regular.61bcec1cede0acb5cd40c9da9cabd194.svg",
+    "static/media/ph_spotify-logo-light.svg": "/static/media/ph_spotify-logo-light.8a6a7e3bcd8187be942a04fa5bee4586.svg",
+    "static/media/bh_logo.svg": "/static/media/bh_logo.920425d8f89882bd024be7af7ff08296.svg",
+    "static/media/globe.svg": "/static/media/globe.b07abd1d7b36fce6e6d85312cec1c8f1.svg",
+    "static/media/clock.svg": "/static/media/clock.a914f3a51643bc1beabdefcb449d1779.svg",
     "index.html": "/index.html",
-    "static/media/heroicons_information-circle.svg": "/static/media/heroicons_information-circle.e65db121eef5bf6d034981d05f3ac9a2.svg",
-    "static/media/clarity_home-line.svg": "/static/media/clarity_home-line.57bcc6c7ad7daf11bbbbeab63abe4d60.svg",
-    "static/media/simple-icons_githubsponsors.svg": "/static/media/simple-icons_githubsponsors.ae3cffe8cf8e56fd1c3ca5754c1ed87a.svg",
-    "static/media/akar-icons_schedule.svg": "/static/media/akar-icons_schedule.b1e2433cc2784f93c21bbf55c0e02b26.svg",
-    "static/media/folder.svg": "/static/media/folder.17f8c7b96567a265a836d3da3222ff89.svg",
-    "static/media/akar-icons_chat-question.svg": "/static/media/akar-icons_chat-question.5215193918263d09d14011e9e02d8308.svg",
-    "static/media/cap.svg": "/static/media/cap.b10f2c13de8283c27e2a44b579604c69.svg",
-    "main.ea9a977e.css.map": "/static/css/main.ea9a977e.css.map",
-    "main.d0737e40.js.map": "/static/js/main.d0737e40.js.map"
+    "static/media/heroicons_information-circle.svg": "/static/media/heroicons_information-circle.21c19ac567905987d9e628bac7688224.svg",
+    "static/media/clarity_home-line.svg": "/static/media/clarity_home-line.8da825af4ba07d977c591cbb0b153089.svg",
+    "static/media/simple-icons_githubsponsors.svg": "/static/media/simple-icons_githubsponsors.2e83e189208c8be3db913b19a7330970.svg",
+    "static/media/akar-icons_schedule.svg": "/static/media/akar-icons_schedule.465cc7f4b66c4aaeb59b1bf6921d06d2.svg",
+    "static/media/folder.svg": "/static/media/folder.bc3bfd07796794c772af47f22154ca6f.svg",
+    "static/media/akar-icons_chat-question.svg": "/static/media/akar-icons_chat-question.2b24f1aaa80a138dcd045fe51e2bffe3.svg",
+    "static/media/cap.svg": "/static/media/cap.4071cd381fc9934135e78a2e43b6ef23.svg",
+    "main.eeb55132.css.map": "/static/css/main.eeb55132.css.map",
+    "main.e14ce832.js.map": "/static/js/main.e14ce832.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea9a977e.css",
-    "static/js/main.d0737e40.js"
+    "static/css/main.eeb55132.css",
+    "static/js/main.e14ce832.js"
   ]
 }
