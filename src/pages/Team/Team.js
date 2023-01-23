@@ -69,7 +69,7 @@ const Team = () => {
           </div>
           <div className="team-circles">
               {data.map((info) => {
-                if (info.id <= 20 & info.id > 17){
+                if (info.id <= 19 & info.id > 17){
                   return <Profile key={info.id} {...info}/>
                 } else return null
                   })}
@@ -79,7 +79,7 @@ const Team = () => {
           </div>
           <div className="team-circles">
               {data.map((info) => {
-                if (info.id <= 23 & info.id > 20){
+                if (info.id <= 23 & info.id > 19){
                   return <Profile key={info.id} {...info}/>
                 } else return null
                   })}
@@ -119,7 +119,7 @@ const Team = () => {
           </div>
           <div className="sub-team-category">
             <h2>Alert App</h2>
-          </div> else return null
+          </div>
           <div className="team-circles">
               {data.map((info) => {
                 if (info.id <= 52 & info.id > 48){
