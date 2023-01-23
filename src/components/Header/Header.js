@@ -24,7 +24,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import { styled } from '@mui/material/styles';
 import { ListItemIcon} from '@mui/material';
 import ClearIcon from '@mui/icons-material/Clear';
-import { useEffect, useHistory } from 'react';
+// import { useEffect, useHistory } from 'react';
 
 
 
@@ -41,16 +41,16 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 }));
 
 const Header = (props) => {
-    const [setAnchorElNav] = React.useState(null);
-    const [setOpen] = React.useState(false);
+    // const [setAnchorElNav] = React.useState(null);
+    // const [setOpen] = React.useState(false);
   
-    const handleCloseNavMenu = () => {
-      setAnchorElNav(null);
-    };
+    // const handleCloseNavMenu = () => {
+    //   setAnchorElNav(null);
+    // };
   //used to close the drawer
-    const handleDrawerClose = () => {
-      setOpen(false);
-    };
+    // const handleDrawerClose = () => {
+    //   setOpen(false);
+    // };
   
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);

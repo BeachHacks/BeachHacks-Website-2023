@@ -3,7 +3,7 @@ import React from "react";
 import "./Sponsors.css";
 import GoogleCloudIcon from "../../assets/google_cloud.svg";
 import CodeAndCoffee from "../../assets/code_and_coffee.svg";
-import BisectHosting from "../../assets/Bisect-Hosting.png";
+
 const Sponsors = () => {
   return (
     <section className="sponsor-view" id="sponsors">

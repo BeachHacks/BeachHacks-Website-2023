@@ -7,7 +7,7 @@ const Profile = ({name, position, link}) => {
         <div>
             <div className="circle-space">
                 <div className="circle">
-                    <img src={link} alt="Profile Picture"/>
+                    <img src={link} alt="Profile"/>
                 </div>
                 <h2 className="circle-name">{name}</h2>
                 <h3 className="circle-position">{position}</h3>

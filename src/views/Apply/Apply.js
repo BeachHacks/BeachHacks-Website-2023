@@ -11,10 +11,10 @@ const Apply = () => {
                     <img src={bh_logo} alt="BeachHacks" className="home-section-logo"/>
                     <h1>BeachHacks</h1>
                 </div>
-                 <h2>February 25th-26th</h2>
+                <h2>February 25th-26th</h2>
                 <Count />
-              <h3>Get Involved!</h3>
-              <div className="padding">
+                <h3>Get Involved!</h3>
+            <div className="padding">
                 <Link to="/apply">
                     <button className="home-btn">Apply Now</button>
                 </Link>
@@ -22,7 +22,7 @@ const Apply = () => {
             </div>
             <div className="home-section-right">
                 <div className="container home-box">
-                    <img src="https://i.imgur.com/cdVc6cI.jpg"></img>
+                    <img src="https://i.imgur.com/cdVc6cI.jpg" alt="BeachHacks"></img>
                 </div>
             </div>
         </section>
