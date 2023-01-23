@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/BeachHacks-Website-2023/static/css/main.ea9a977e.css",
-    "main.js": "/BeachHacks-Website-2023/static/js/main.89ad5abd.js",
-    "static/media/bhLogoBrick.png": "/BeachHacks-Website-2023/static/media/bhLogoBrick.714be27428b61a73dbdc.png",
-    "static/media/fluent_people-team-20-regular.svg": "/BeachHacks-Website-2023/static/media/fluent_people-team-20-regular.fb116a8cd78f6080d42927fe2d7d709e.svg",
-    "static/media/ph_spotify-logo-light.svg": "/BeachHacks-Website-2023/static/media/ph_spotify-logo-light.756673e1e649f6e06bda03a70004d09d.svg",
-    "static/media/bh_logo.svg": "/BeachHacks-Website-2023/static/media/bh_logo.a9941ef46c03084c7b117fc5e84d5c2a.svg",
-    "static/media/globe.svg": "/BeachHacks-Website-2023/static/media/globe.be09c0962c3e428dc0d8aa4b5230c6f5.svg",
-    "static/media/clock.svg": "/BeachHacks-Website-2023/static/media/clock.fb3b1d01c57465509a937570b156435f.svg",
-    "index.html": "/BeachHacks-Website-2023/index.html",
-    "static/media/heroicons_information-circle.svg": "/BeachHacks-Website-2023/static/media/heroicons_information-circle.e65db121eef5bf6d034981d05f3ac9a2.svg",
-    "static/media/clarity_home-line.svg": "/BeachHacks-Website-2023/static/media/clarity_home-line.57bcc6c7ad7daf11bbbbeab63abe4d60.svg",
-    "static/media/simple-icons_githubsponsors.svg": "/BeachHacks-Website-2023/static/media/simple-icons_githubsponsors.ae3cffe8cf8e56fd1c3ca5754c1ed87a.svg",
-    "static/media/akar-icons_schedule.svg": "/BeachHacks-Website-2023/static/media/akar-icons_schedule.b1e2433cc2784f93c21bbf55c0e02b26.svg",
-    "static/media/folder.svg": "/BeachHacks-Website-2023/static/media/folder.17f8c7b96567a265a836d3da3222ff89.svg",
-    "static/media/akar-icons_chat-question.svg": "/BeachHacks-Website-2023/static/media/akar-icons_chat-question.5215193918263d09d14011e9e02d8308.svg",
-    "static/media/cap.svg": "/BeachHacks-Website-2023/static/media/cap.b10f2c13de8283c27e2a44b579604c69.svg",
-    "main.ea9a977e.css.map": "/BeachHacks-Website-2023/static/css/main.ea9a977e.css.map",
-    "main.89ad5abd.js.map": "/BeachHacks-Website-2023/static/js/main.89ad5abd.js.map"
+    "main.css": "/static/css/main.ea9a977e.css",
+    "main.js": "/static/js/main.d0737e40.js",
+    "static/media/bhLogoBrick.png": "/static/media/bhLogoBrick.714be27428b61a73dbdc.png",
+    "static/media/fluent_people-team-20-regular.svg": "/static/media/fluent_people-team-20-regular.fb116a8cd78f6080d42927fe2d7d709e.svg",
+    "static/media/ph_spotify-logo-light.svg": "/static/media/ph_spotify-logo-light.756673e1e649f6e06bda03a70004d09d.svg",
+    "static/media/bh_logo.svg": "/static/media/bh_logo.a9941ef46c03084c7b117fc5e84d5c2a.svg",
+    "static/media/globe.svg": "/static/media/globe.be09c0962c3e428dc0d8aa4b5230c6f5.svg",
+    "static/media/clock.svg": "/static/media/clock.fb3b1d01c57465509a937570b156435f.svg",
+    "index.html": "/index.html",
+    "static/media/heroicons_information-circle.svg": "/static/media/heroicons_information-circle.e65db121eef5bf6d034981d05f3ac9a2.svg",
+    "static/media/clarity_home-line.svg": "/static/media/clarity_home-line.57bcc6c7ad7daf11bbbbeab63abe4d60.svg",
+    "static/media/simple-icons_githubsponsors.svg": "/static/media/simple-icons_githubsponsors.ae3cffe8cf8e56fd1c3ca5754c1ed87a.svg",
+    "static/media/akar-icons_schedule.svg": "/static/media/akar-icons_schedule.b1e2433cc2784f93c21bbf55c0e02b26.svg",
+    "static/media/folder.svg": "/static/media/folder.17f8c7b96567a265a836d3da3222ff89.svg",
+    "static/media/akar-icons_chat-question.svg": "/static/media/akar-icons_chat-question.5215193918263d09d14011e9e02d8308.svg",
+    "static/media/cap.svg": "/static/media/cap.b10f2c13de8283c27e2a44b579604c69.svg",
+    "main.ea9a977e.css.map": "/static/css/main.ea9a977e.css.map",
+    "main.d0737e40.js.map": "/static/js/main.d0737e40.js.map"
   },
   "entrypoints": [
     "static/css/main.ea9a977e.css",
-    "static/js/main.89ad5abd.js"
+    "static/js/main.d0737e40.js"
   ]
 }
