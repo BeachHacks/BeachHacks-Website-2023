@@ -22,7 +22,7 @@ export const data = [
     {
         id: 4, 
         name: "Francine",
-        position: "Spotify Queue",
+        position: "Internal Development",
         link: "https://i.imgur.com/VqdN5In.jpg"
     },
     {
