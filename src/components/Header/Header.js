@@ -14,7 +14,7 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
-import {Link} from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link';
 import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
@@ -73,7 +73,7 @@ const Header = (props) => {
               <ListItemIcon>
                 <img alt='' class="Icon"src={HomeIcon}/>
               </ListItemIcon>
-                <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={`/`} href="#" >Home</Link>
+                <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={`/`} >Home</Link>
             </ListItemButton>
         </ListItem>
         <ListItem sx={{ fontWeight: 'bold' }}>
@@ -81,7 +81,7 @@ const Header = (props) => {
               <ListItemIcon>
                 <img alt="" class="Icon"src={AboutIcon}/>
               </ListItemIcon>
-                <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to='/' href='#about' >About</a>
+                <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to='/#about' >About</Link>
             </ListItemButton>
         </ListItem>
         <ListItem sx={{ fontWeight: 'bold' }}>
@@ -89,7 +89,7 @@ const Header = (props) => {
               <ListItemIcon>
                 <img alt="" className='Icon' src={SponsorIcon}/>
               </ListItemIcon>
-              <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} href="#sponsors" rel="noreferrer">Sponsors</a>
+              <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} to="/#sponsors" rel="noreferrer">Sponsors</Link>
             </ListItemButton>
         </ListItem>
         <ListItem sx={{ fontWeight: 'bold' }}>
@@ -97,7 +97,7 @@ const Header = (props) => {
               <ListItemIcon>
                 <img alt="" class="Icon"src={FAQIcon}/>
               </ListItemIcon>
-                <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={'/'} href="#faq">FAQ</a>
+                <Link style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black", textAlign: "center"}} to={'/#faq'}>FAQ</Link>
             </ListItemButton>
         </ListItem>
       <Divider sx={{color:"black"}}/>
