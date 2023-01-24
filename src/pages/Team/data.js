@@ -9,7 +9,7 @@ export const data = [
     {
         id: 2, 
         name: "Jordan",
-        position: "Operations",
+        position: "Sponsors",
         link: "https://i.imgur.com/UJDXsAH.jpg"
 
     },
@@ -111,16 +111,16 @@ export const data = [
     },
     {
         id: 19, 
-        name: "Daniel",
-        position: "",
-        link: "https://i.imgur.com/pAWO98k.jpg"
-    },
-    {
-        id: 20, 
         name: "Dorothy",
         position: "",
         link: "https://i.imgur.com/Qh6B3bF.png"
     },
+    {
+        id: 20, 
+        name: "Daniel",
+        position: "",
+        link: "https://i.imgur.com/pAWO98k.jpg"
+    }, 
     {
         id: 21, 
         name: "Mark",
