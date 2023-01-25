@@ -16,7 +16,7 @@ export const data = [
     {
         id: 3, 
         name: "Katelyn",
-        position: "Design",
+        position: "Design, Spotify",
         link: "https://i.imgur.com/DrEiyNm.jpg"
     },
     {
@@ -235,17 +235,21 @@ export const data = [
         position: "Developer",
         link: "https://i.imgur.com/Qh6B3bF.png"
     },
- 
+    {
+        id: 44, 
+        name: "James",
+        position: "Developer",
+        link: "https://i.imgur.com/Qh6B3bF.png"
+    },
     {
         id: 45, 
-         name: "Quan",
+        name: "Quan",
         position: "Developer",
         link: "https://i.imgur.com/aajgSPa.jpg"
-       
     },
     {
         id: 46, 
-         name: "Mayank",
+        name: "Mayank",
         position: "Developer",
         link: "https://i.imgur.com/lIJiAhf.jpg"
     },
