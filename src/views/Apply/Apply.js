@@ -22,7 +22,7 @@ const Apply = () => {
             </div>
             <div className="home-section-right">
                 <div className="container home-box">
-                    <img src="https://i.imgur.com/cdVc6cI.jpg" alt="BeachHacks"></img>
+                    <img src="https://i.imgur.com/84Hc5Wo.png" alt="BeachHacks"></img>
                 </div>
             </div>
         </section>

@@ -23,6 +23,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: var(--primary-color) !important;
+    overflow-x: hidden;
 }
 
 h1 {

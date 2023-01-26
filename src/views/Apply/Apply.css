@@ -45,15 +45,16 @@
     color: #666666;
     background-color: #D9D9D9;
     width: clamp(20rem, 5.0000rem + 66.6667vw, 50rem);
-    height: 50em;
+    height: clamp(20rem, 5.0000rem + 66.6667vw, 50rem);
     border-radius: 20px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background-image: linear-gradient(#6b57c2, #dff2ff);
 }
 
 .home-box img {
-    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 .apply-button {

@@ -40,11 +40,15 @@ h3 {
     align-items: center;
     overflow: hidden;
     margin: 4em 0 0 2em;
+    background-image: url("https://i.imgur.com/8H6dJ2j.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .about-photo img {
-    width: 100%;
+    height: 100%;
     object-fit: cover;
+    
 }
 
 .about-text-box {

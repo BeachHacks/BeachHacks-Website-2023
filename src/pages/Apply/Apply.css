@@ -7,6 +7,7 @@
     place-items: center;
     grid-template-columns: repeat(auto-fit , minmax(20rem, 57rem));
     max-width: auto;
+    padding: 3em 0 6em 0;
 }
 
 /* Apply Left Section */

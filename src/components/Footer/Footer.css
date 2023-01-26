@@ -5,6 +5,7 @@ footer {
     background-color: var(--neutral-focus);
     font-family:'Trebuchet MS';
     color: black;
+    z-index: -1;
 }
 
 .social {
