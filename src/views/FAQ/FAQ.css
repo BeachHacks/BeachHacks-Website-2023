@@ -17,7 +17,10 @@
 }
 
 .question-container {
-    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 0 0 0;
     height: fit-content;
     width: 80%;
     /* width: clamp(17.5rem, 60%, 81rem); */
@@ -34,7 +37,7 @@
     border-radius: 13px;
     background-clip: border-box;
     margin-bottom: 1em;
-    box-shadow: -5px 14px 23px 12px rgb(0 0 0 / 10%);
+    box-shadow: -5px 14px 23px -2px rgb(0 0 0 / 10%);
     padding: 10px;
 }
 
