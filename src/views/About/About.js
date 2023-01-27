@@ -8,7 +8,7 @@ const About = () => {
     return (
         <section className="about-container" id="about">
             {/* test comment */}
-            <div className="container about-photo">
+            <div className="about-photo">
                 <img src="https://i.imgur.com/SCV9CR2.png" alt="CSULB"></img>
                 {/* <h1 className="about-photo-text">Photo</h1> */}
             </div>

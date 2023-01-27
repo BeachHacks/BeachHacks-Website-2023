@@ -62,7 +62,7 @@ const Sponsors = () => {
               <img src="https://i.imgur.com/ffbxOkE.png" alt="Arduino goes here" />
             </a>
           </div>
-          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+          <a href="https://drive.google.com/file/d/1l3p-3Cju9sHnrNiguq4Uylv80qgGqvFM/view" target="_blank" rel="noreferrer">
             <button>Become a Sponsor</button>
           </a>
         </div>
