@@ -1,13 +1,15 @@
 .sponsor-view {
     margin-top: 15em;
 }
+
 .title {
     display: flex;
     justify-content: center;
     margin: 4rem 0 4rem;
     line-height: 3rem;
 }
-.left{
+
+.left {
     align-self: center;
 }
 
@@ -64,13 +66,14 @@
     min-width: 235px;
     aspect-ratio: 1/1;
     border-radius: 25px;
-    background-color: #d9d9d9;
+    background-color: var(--primary-color) !important;
+    box-shadow: none;
     overflow: hidden;
     margin-bottom: 2rem;
 }
 
 .big-sponsor img {
-    width: 100%; 
+    width: 100%;
     object-fit: cover;
 }
 
@@ -78,20 +81,21 @@
     display: flex;
     width: 14rem;
     height: 14rem;
-    background-color: #d9d9d9;
+    background-color: var(--primary-color) !important;
+    box-shadow: none;
     border-radius: 1rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    
-}
 
+}
 
 
 .medium-sponsor img {
     width: 100%;
     object-fit: cover;
 }
+
 .small-sponsor img {
     width: 100%;
     object-fit: cover;
@@ -119,14 +123,14 @@
 a {
     justify-self: center;
     text-decoration: none;
-    
+
 }
 
 @media screen and (max-width: 880px) {
     .medium-sponsor {
         width: 10rem;
         height: 10rem;
-        
+
     }
 
     .top {
@@ -142,7 +146,7 @@ a {
 
     }
 
-    
+
 }
 
 @media screen and (max-width: 688px) {
@@ -150,6 +154,7 @@ a {
     .sponsor-view {
         margin-top: 0em;
     }
+
     .top {
         margin-top: 2em;
         display: grid;
@@ -162,11 +167,11 @@ a {
 
 @media screen and (max-width: 527px) {
 
-    
+
     .top {
         margin-top: 2em;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(4rem, 6rem));
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 8rem));
         grid-gap: 0.5rem 0.5rem;
         justify-content: center;
         align-items: center;
@@ -175,7 +180,6 @@ a {
     /* .title {
         font-size: 24px;
     } */
-
     .bottom {
         display: grid;
         grid-template-columns: repeat(3, minmax(4rem, 4.813rem));
@@ -204,7 +208,7 @@ a {
     }
 
     .right {
-        margin-top: 3.188rem;
+        margin-top: 0.188rem;
         margin-bottom: 1rem;
     }
 
@@ -212,7 +216,9 @@ a {
         margin-bottom: 2.625rem;
     }
 
-    .small-sponsor:nth-last-child(-n+1) {
-        display: none;
+    .medium-sponsor:nth-last-child(-n+2) {
+        justify-content: center;
+        justify-items: center;
+        display: flex;
     }
 }
