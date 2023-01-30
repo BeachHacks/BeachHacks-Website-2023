@@ -144,7 +144,7 @@ const Header = (props) => {
           <Toolbar>
 
         {/* Beachhacks logo */}
-          <img className='logoImg' alt='our logo :)'src={Logo} sx={{padding: '10px'}}/>
+          <img className='logoImg' alt='our logo :)'src={Logo} />
             <IconButton
               aria-label="account of current user"
               onClick={handleDrawerToggle}

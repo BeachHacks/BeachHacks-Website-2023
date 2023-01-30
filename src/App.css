@@ -11,6 +11,7 @@
     --base-200: #16232E;
     --base-300: #04121C;
 }
+
 * {
     scroll-behavior: smooth;
 }
@@ -77,5 +78,5 @@ button:hover {
 
 .container {
     background-color: white !important;
-    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
 }

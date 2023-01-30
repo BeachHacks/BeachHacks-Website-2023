@@ -17,7 +17,10 @@
 }
 
 .question-container {
-    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 0 0 0;
     height: fit-content;
     width: 80%;
     /* width: clamp(17.5rem, 60%, 81rem); */
@@ -27,13 +30,15 @@
 .question {
     justify-content: center;
     /* border-left: 125px solid var(--neutral-focus); */
-    border-radius: 5px;
-    border-left: clamp(0.78rem, -1.3473rem + 11.3455vw, 7.8rem) solid var(--neutral-focus);
-    border-right: clamp(0.906rem, -1.8498rem + 14.6974vw, 10rem) solid var(--neutral-focus);
-    border-top: clamp(1.1rem, 0.9030rem + 1.0505vw, 1.75rem) solid var(--neutral-focus);
-    border-bottom: clamp(1.1rem, 0.9409rem + 0.8485vw, 1.625rem) solid var(--neutral-focus);
+    /*border-left: clamp(0.78rem, -1.3473rem + 11.3455vw, 7.8rem) solid var(--neutral-focus);*/
+    /*border-right: clamp(0.906rem, -1.8498rem + 14.6974vw, 10rem) solid var(--neutral-focus);*/
+    /*border-top: clamp(1.1rem, 0.9030rem + 1.0505vw, 1.75rem) solid var(--neutral-focus);*/
+    /*border-bottom: clamp(1.1rem, 0.9409rem + 0.8485vw, 1.625rem) solid var(--neutral-focus);*/
+    border-radius: 13px;
     background-clip: border-box;
     margin-bottom: 1em;
+    box-shadow: -5px 14px 23px -2px rgb(0 0 0 / 10%);
+    padding: 10px;
 }
 
 .quesiton-box {
