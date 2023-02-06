@@ -6,3 +6,14 @@
     flex-direction: column;
     align-items: center;
 }
+
+.spotify-container img {
+    padding-top: 3em;
+    width: 30em;
+}
+
+@media screen and (max-width: 800px) {
+    .spotify-container img {
+        width: 20em;
+    }
+}

@@ -10,6 +10,7 @@ const Apply = () => {
                     <h1>BeachHacks</h1>
                 </div>
                 <h3>Want to participate?</h3>
+                <img className="shark-img" src="https://media.discordapp.net/attachments/1009628086377132153/1071547518418157568/USU.png" alt="shark usu"></img>
                 {/* <button>Apply Now!</button> */}
             </div>
             <div className="apply-sposor-section">
@@ -35,7 +36,7 @@ const Apply = () => {
                     <h1 className="apply-box-title">Looking to be a Judge?</h1>
                     <h3 className="apply-box-desc">BeachHacks is looking for judges to help us evaluate projects and provide feedback to students. If you are interested in judging, please fill out the form below.</h3>
                     <div className="apply-box-btn">
-                        <a href="https://drive.google.com/file/d/1l3p-3Cju9sHnrNiguq4Uylv80qgGqvFM/view">
+                        <a href="https://bit.ly/bh7judge">
                             <button className="apply-button ">APPLY TO JUDGE</button>
                         </a>
                     </div>

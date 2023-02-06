@@ -5,3 +5,14 @@
     align-items: center;
     flex-direction: column;
 }
+
+.workshop-container img {
+    width: 30em;
+    padding-top: 3em;
+}
+
+@media screen and (max-width: 800px) {
+    .workshop-container img {
+        width: 20em;
+    }
+}

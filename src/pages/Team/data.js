@@ -75,7 +75,7 @@ export const data = [
     id: 13,
     name: "Ben",
     position: "",
-    link: "https://i.imgur.com/Qh6B3bF.png",
+    link: "https://media.discordapp.net/attachments/1009628086377132153/1071547517990346822/Linkedin_Shark_2.png",
   },
   {
     id: 14,
@@ -87,9 +87,14 @@ export const data = [
     id: 15,
     name: "Jackie",
     position: "Graphic Designer",
-    link: "https://i.imgur.com/Qh6B3bF.png",
+    link: "https://media.discordapp.net/attachments/1009628086377132153/1071547517990346822/Linkedin_Shark_2.png",
   },
-
+  {
+    id: 15,
+    name: "Grant",
+    position: "Manager",
+    link: "https://i.imgur.com/Hp7BrD7.png",
+  },
   {
     id: 16,
     name: "Sharon",
@@ -106,7 +111,7 @@ export const data = [
     id: 18,
     name: "Dorothy",
     position: "",
-    link: "https://i.imgur.com/Qh6B3bF.png",
+    link: "https://media.discordapp.net/attachments/1009628086377132153/1071547517990346822/Linkedin_Shark_2.png",
   },
   {
     id: 19,
@@ -148,13 +153,13 @@ export const data = [
     id: 25,
     name: "Miguel",
     // position: "Position",
-    link: "https://i.imgur.com/Qh6B3bF.png",
+    link: "https://media.discordapp.net/attachments/1009628086377132153/1071547517990346822/Linkedin_Shark_2.png",
   },
   {
     id: 26,
     name: "Kelly",
     // position: "Position",
-    link: "https://i.imgur.com/Qh6B3bF.png",
+    link: "https://media.discordapp.net/attachments/1009628086377132153/1071547517990346822/Linkedin_Shark_2.png",
   },
   {
     id: 27,
@@ -220,13 +225,13 @@ export const data = [
     id: 37,
     name: "Victor",
     position: "Developer",
-    link: "https://i.imgur.com/Qh6B3bF.png",
+    link: "https://media.discordapp.net/attachments/1009628086377132153/1071547517990346822/Linkedin_Shark_2.png",
   },
   {
     id: 38,
     name: "Jonathan",
     position: "Developer",
-    link: "https://i.imgur.com/Qh6B3bF.png",
+    link: "https://media.discordapp.net/attachments/1009628086377132153/1071547517990346822/Linkedin_Shark_2.png",
   },
 
   {
@@ -258,13 +263,13 @@ export const data = [
     id: 43,
     name: "Jenna",
     position: "Designer",
-    link: "https://i.imgur.com/Qh6B3bF.png",
+    link: "https://cdn.discordapp.com/attachments/1065519315236950016/1070207553201520700/IMG_3306.jpg",
   },
   {
     id: 44,
     name: "James",
     position: "Developer",
-    link: "https://i.imgur.com/Qh6B3bF.png",
+    link: "https://media.discordapp.net/attachments/1009628086377132153/1071547517990346822/Linkedin_Shark_2.png",
   },
   {
     id: 45,

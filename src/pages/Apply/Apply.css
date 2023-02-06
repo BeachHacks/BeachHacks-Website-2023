@@ -21,6 +21,11 @@
     padding: 0.25rem;
 }
 
+.shark-img {
+    padding-top: 3em;
+    width: 40em;
+}
+
 .apply-app-logo {
     height: auto;
     width: clamp(3rem, 1.5000rem + 6.6667vw, 6rem);
@@ -83,4 +88,10 @@
 
 .apply-button {
     width: 12em;
+}
+
+@media screen and (max-width: 800px) {
+    .shark-img {
+        width: 20em;
+    }
 }

@@ -21,6 +21,7 @@
     grid-template-columns: repeat(auto-fit, minmax(20rem, 163rem));
     max-width: 100%;
     margin-left: 10em;
+    image-rendering: auto
 }
 
 .team-circles {

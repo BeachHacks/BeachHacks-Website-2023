@@ -36,16 +36,16 @@ const Clock = ({ deadline }) => {
   return (
     <div className='time-cont'>
       <div className='time'>
-        <h2 className=' nums clock-days'>{leading0(days)}</h2><h3> Days</h3>
+        <h2 className='nums clock-days'>{leading0(days)}</h2><h3> Days</h3>
       </div>
       <div className='time'>
-        <h2 className=' nums clock-hours'>{leading0(hours)}</h2><h3> Hours</h3>
+        <h2 className='nums clock-hours'>{leading0(hours)}</h2><h3> Hours</h3>
       </div>
       <div className='time'>
-        <h2 className=' nums clock-minutes'>{leading0(minutes)}</h2><h3> Minutes</h3>
+        <h2 className='nums clock-minutes'>{leading0(minutes)}</h2><h3> Minutes</h3>
       </div>
       <div className='time'>
-        <h2 className=' nums clock-seconds'>{leading0(seconds)}</h2><h3> Seconds</h3>
+        <h2 className='nums clock-seconds'>{leading0(seconds)}</h2><h3> Seconds</h3>
       </div>
     </div>
   );
