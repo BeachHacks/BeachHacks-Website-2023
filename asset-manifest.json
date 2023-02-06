@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f57124c.css",
-    "main.js": "/static/js/main.9b123c13.js",
+    "main.css": "/static/css/main.a56edefd.css",
+    "main.js": "/static/js/main.3e893d43.js",
     "static/media/bhLogoBrick.png": "/static/media/bhLogoBrick.714be27428b61a73dbdc.png",
     "static/media/fluent_people-team-20-regular.svg": "/static/media/fluent_people-team-20-regular.61bcec1cede0acb5cd40c9da9cabd194.svg",
     "static/media/bh_logo.svg": "/static/media/bh_logo.920425d8f89882bd024be7af7ff08296.svg",
@@ -16,11 +16,11 @@
     "static/media/folder.svg": "/static/media/folder.bc3bfd07796794c772af47f22154ca6f.svg",
     "static/media/akar-icons_chat-question.svg": "/static/media/akar-icons_chat-question.2b24f1aaa80a138dcd045fe51e2bffe3.svg",
     "static/media/cap.svg": "/static/media/cap.4071cd381fc9934135e78a2e43b6ef23.svg",
-    "main.2f57124c.css.map": "/static/css/main.2f57124c.css.map",
-    "main.9b123c13.js.map": "/static/js/main.9b123c13.js.map"
+    "main.a56edefd.css.map": "/static/css/main.a56edefd.css.map",
+    "main.3e893d43.js.map": "/static/js/main.3e893d43.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f57124c.css",
-    "static/js/main.9b123c13.js"
+    "static/css/main.a56edefd.css",
+    "static/js/main.3e893d43.js"
   ]
 }
