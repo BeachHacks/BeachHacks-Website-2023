@@ -248,28 +248,28 @@ export const data = [
   },
   {
     id: 41,
+    name: "James",
+    position: "Developer",
+    link: "https://imgur.com/LDtSg37",
+  },
+  {
+    id: 42,
     name: "Jonic",
     position: "Developer",
     link: "https://i.imgur.com/SZAwTsn.png",
   },
   {
-    id: 42,
+    id: 43,
     name: "Katelyn",
-    position: "Design",
+    position: "Designer",
     link: "https://i.imgur.com/DrEiyNm.jpg",
   },
 
   {
-    id: 43,
+    id: 44,
     name: "Jenna",
     position: "Designer",
     link: "https://cdn.discordapp.com/attachments/1065519315236950016/1070207553201520700/IMG_3306.jpg",
-  },
-  {
-    id: 44,
-    name: "James",
-    position: "Developer",
-    link: "https://media.discordapp.net/attachments/1009628086377132153/1071547517990346822/Linkedin_Shark_2.png",
   },
   {
     id: 45,
