@@ -167,8 +167,8 @@ const Header = (props) => {
             <ListItemIcon>
               <img alt="" class="Icon" src={SpotifyIcon} />
             </ListItemIcon>
-            {/* <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Spotify</a> */}
-            <Link
+            <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} href="https://beachmuse.netlify.app/" target="_blank" rel="noreferrer">BeachMuse</a>
+            {/* <Link
               style={{
                 fontFamily: ["Poppins", "sans-serif"].join(","),
                 textDecoration: "none",
@@ -177,7 +177,7 @@ const Header = (props) => {
               to={`/spotify`}
             >
               BeachMuse
-            </Link>
+            </Link> */}
           </ListItemButton>
         </ListItem>
         <ListItem>
@@ -185,8 +185,8 @@ const Header = (props) => {
             <ListItemIcon>
               <img alt="" class="Icon" src={ScheduleIcon} />
             </ListItemIcon>
-            {/* <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Schedule</a> */}
-            <Link
+            <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", fontSize: "19px", color: "black"}} href="https://www.beachhacks-schedule.com/" target="_blank" rel="noreferrer">Schedule</a>
+            {/* <Link
               style={{
                 fontFamily: ["Poppins", "sans-serif"].join(","),
                 textDecoration: "none",
@@ -195,7 +195,7 @@ const Header = (props) => {
               to={`/workshop`}
             >
               Schedule
-            </Link>
+            </Link> */}
           </ListItemButton>
         </ListItem>
       </List>
@@ -264,8 +264,8 @@ const Header = (props) => {
               }}
               variant="text"
             >
-              {/* <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Workshop</a> */}
-              <Link
+              <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "black"}} href="https://www.beachhacks-schedule.com/" target="_blank" rel="noreferrer">Schedule</a>
+              {/* <Link
                 style={{
                   fontFamily: ["Poppins", "sans-serif"].join(","),
                   textDecoration: "none",
@@ -274,7 +274,7 @@ const Header = (props) => {
                 to={`/workshop`}
               >
                 Schedule
-              </Link>
+              </Link> */}
             </Button>
 
             <Button
@@ -312,8 +312,8 @@ const Header = (props) => {
               }}
               variant="text"
             >
-              {/* <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "black"}} href="https://www.google.com/" target="_blank" rel="noreferrer">Spotify</a> */}
-              <Link
+              <a style={{fontFamily: ['Poppins', 'sans-serif'].join(','),textDecoration: "none", color: "black"}} href="https://beachmuse.netlify.app/" target="_blank" rel="noreferrer">BeachMuse</a>
+              {/* <Link
                 style={{
                   fontFamily: ["Poppins", "sans-serif"].join(","),
                   textDecoration: "none",
@@ -322,7 +322,7 @@ const Header = (props) => {
                 to={`/spotify`}
               >
                 BeachMuse
-              </Link>
+              </Link> */}
             </Button>
             <Button
               //onClick={handleCloseNavMenu}
