@@ -1,4 +1,5 @@
 # BeachHacks Website 2023
+A website where we bring in participants to join BeachHacks.
 
 ## Directory
 
